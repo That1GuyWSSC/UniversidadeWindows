@@ -1,0 +1,1 @@
+extern float mediaTresValores(float i,float n, float p);
