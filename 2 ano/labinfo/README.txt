@@ -20,7 +20,7 @@ Para funcionar, mudar o ficheiro de output e o resto dos "Add-Content"
 
 Este script agenda duas tarefas para executarem num certo tempo na maquina local.
 
-Para este funcionar, mudar o PATH das duas variaveis "$acao" e "$cao2".
+Para este funcionar, mudar o PATH das duas variaveis "$acao" e "$acao2".
 
 Mudar a hora das tarefas também é facil, basta mudar na variavel "$trigger".
 
