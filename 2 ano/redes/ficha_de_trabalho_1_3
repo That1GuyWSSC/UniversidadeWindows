@@ -1,0 +1,5 @@
+Entrar na consola de comandos (CLI) do computador (cmd windows ou Shell linux) e 
+testar a conectividade a um domínio conhecido (ex: ping google.com) i. Fazer 
+uma interpretação descritiva completa do relatório recebido.
+
+Na seguinte imagem, executei o commando "ping google.com", usando o protocolo ICMP mandei um "ECHO_REQUEST" com o objetivo de receber um "ECHO_RESPONSE" do site para saber se o site estava ativo. Obtivemos uma resposta do site, indicando que ele estava a ativo e pronto a receber pacotes ICMP. Nao houve qualquer perda de pacotes. O round trip time (RTT) medio foi de 18.288ms. O time to live (ttl) de cada pacote era de 58.

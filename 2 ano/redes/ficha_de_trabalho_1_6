@@ -1,0 +1,2 @@
+No cabecalho do wireshark vemos que foram capturados dois pacotes de informacao usando o protocolo ICMP. O primeiro foi um "ECHO_REQUEST"
+que nos mandamos para o destinatario (142.250.178.174) O segundo foi um "ECHO_REPLY" que o site mandou de volta para nos (192.168.1.95).
