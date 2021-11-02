@@ -1,0 +1,4 @@
+var searchData=
+[
+  ['_5f_5fpad0_5f_5f_175',['__pad0__',['../_questao01_2pseudocodigo_8txt.html#af95da843d5b016e8d93bf12096fc82d9',1,'__pad0__():&#160;pseudocodigo.txt'],['../_questao02_2pseudocodigo_8txt.html#af95da843d5b016e8d93bf12096fc82d9',1,'__pad0__():&#160;pseudocodigo.txt'],['../_questao03_2pseudocodigo_8txt.html#af95da843d5b016e8d93bf12096fc82d9',1,'__pad0__():&#160;pseudocodigo.txt'],['../_questao04_2pseudocodigo_8txt.html#af95da843d5b016e8d93bf12096fc82d9',1,'__pad0__():&#160;pseudocodigo.txt'],['../_questao06_2pseudocodigo_8txt.html#a0441b1b772370c333218dae70d59827c',1,'__pad0__():&#160;pseudocodigo.txt'],['../_questao07_2pseudocodigo_8txt.html#af95da843d5b016e8d93bf12096fc82d9',1,'__pad0__():&#160;pseudocodigo.txt'],['../_questao08_2pseudocodigo_8txt.html#af95da843d5b016e8d93bf12096fc82d9',1,'__pad0__():&#160;pseudocodigo.txt']]]
+];

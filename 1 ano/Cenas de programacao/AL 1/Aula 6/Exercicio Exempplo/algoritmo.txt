@@ -1,0 +1,23 @@
+Algoritmo
+
+Variaveis
+
+    numero,contador,contadorPares : inteiros
+
+Inicio
+
+    contadorPares <-- 0
+    contador <-- 0
+
+    repetir
+
+       ler(numero)
+
+       se numero % 2 entao
+        contadorPares <-- contadorPares + 1
+        
+       fim-se
+       contador <-- contador + 1
+
+    enquanto(contador < 10)
+Fim

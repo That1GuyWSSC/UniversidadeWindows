@@ -1,0 +1,23 @@
+1 passo - nota do aluno > 9.5 
+2 passo - pedir a nota do aluno
+3 passo - verificar se a expressa e verdadeira se for escrever que o aluno ficou aprovado
+4 passo - mostrar resultado
+
+
+Algoritmo
+
+variveis 
+
+notaAL : real
+
+inicio 
+
+ler (notaAL)
+
+se notaAL > 9.5
+
+   escrever "Aluno aprovado"
+
+   fim-se
+
+   fim

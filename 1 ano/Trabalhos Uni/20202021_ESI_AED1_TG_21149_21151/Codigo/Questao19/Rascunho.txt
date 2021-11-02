@@ -1,0 +1,17 @@
+funções/procedimentos necessarias para questao 19:
+
+- gerar um numero aleatorio (sem intervalo de valores) //isto nao sei se será possivel fazer numa função, dadas as limitações do rand
+
+- gerar um numero aleatorio (com intervalo de valores) //isto nao sei se será possivel fazer numa função, dadas as limitações do rand
+
+//estes dois podem tentar se unir num, com a funçao min e max (ou 0 e max, no caso do enunciado, pois apenas pretende numeros inteiros positivos)
+
+- obter o maior valor de um array, DONE
+
+- obter o menor valor de um array, DONE
+
+- obter amplitude de um array (reutilizando as funçoes maior e menor), DONE
+
+- procedimento para apresentar um array de forma decrescente, e apenas apresentar o valor se for impar
+
+- procedimento para mostrar o array

@@ -1,0 +1,139 @@
+\hypertarget{_questao18_2funcoes_8c}{}\doxysection{Codigo/\+Questao18/funcoes.c File Reference}
+\label{_questao18_2funcoes_8c}\index{Codigo/Questao18/funcoes.c@{Codigo/Questao18/funcoes.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_questao18_2funcoes_8c_a09e548c427cbe9e7adbe2f108fa5e216}{kelvin\+Para\+Celsius}} (float kelvin)
+\begin{DoxyCompactList}\small\item\em Converter graus Kelvin para graus Celsius. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_questao18_2funcoes_8c_af2e21cbe9e1d591e84f70e2c08f25f46}{celsius\+Para\+Kelvin}} (float celsius)
+\begin{DoxyCompactList}\small\item\em Converter graus Celsius para graus Kelvin. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_questao18_2funcoes_8c_ac138fdffd3b1a0cad710c730d2322681}{media\+Array}} (float $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Obtem a media a partir de um array. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_questao18_2funcoes_8c_a6893f5e036ef1a18017d7ec376639c45}{obter\+Maior}} (float $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Obtem o maior valor de um array. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_questao18_2funcoes_8c_aefbab23e890af67688d7901bc834f90c}{obter\+Menor}} (float $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Obtem o menor valor de um array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao18_2funcoes_8c_ab5a067f9930ec7c7d448f755f8aefbcf}{escreve\+Quadro}} (char escala\+Conv, float temps\+Iniciais\mbox{[}$\,$\mbox{]}, float temps\+Finais\mbox{[}$\,$\mbox{]}, int contador)
+\begin{DoxyCompactList}\small\item\em Escreve o quadro final das temperaturas -\/ iniciais e convertidas, maior e menor valores de ambas, média de ambas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_questao18_2funcoes_8c_af2e21cbe9e1d591e84f70e2c08f25f46}\label{_questao18_2funcoes_8c_af2e21cbe9e1d591e84f70e2c08f25f46}} 
+\index{funcoes.c@{funcoes.c}!celsiusParaKelvin@{celsiusParaKelvin}}
+\index{celsiusParaKelvin@{celsiusParaKelvin}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{celsiusParaKelvin()}{celsiusParaKelvin()}}
+{\footnotesize\ttfamily float celsius\+Para\+Kelvin (\begin{DoxyParamCaption}\item[{float}]{celsius }\end{DoxyParamCaption})}
+
+
+
+Converter graus Celsius para graus Kelvin. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em celsius} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao18_2funcoes_8c_ab5a067f9930ec7c7d448f755f8aefbcf}\label{_questao18_2funcoes_8c_ab5a067f9930ec7c7d448f755f8aefbcf}} 
+\index{funcoes.c@{funcoes.c}!escreveQuadro@{escreveQuadro}}
+\index{escreveQuadro@{escreveQuadro}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{escreveQuadro()}{escreveQuadro()}}
+{\footnotesize\ttfamily void escreve\+Quadro (\begin{DoxyParamCaption}\item[{char}]{escala\+Conv,  }\item[{float}]{temps\+Iniciais\mbox{[}$\,$\mbox{]},  }\item[{float}]{temps\+Finais\mbox{[}$\,$\mbox{]},  }\item[{int}]{contador }\end{DoxyParamCaption})}
+
+
+
+Escreve o quadro final das temperaturas -\/ iniciais e convertidas, maior e menor valores de ambas, média de ambas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em escala\+Conv} & recebe a escala de conversão \\
+\hline
+{\em temps\+Iniciais} & recebe o array das temperaturas iniciais \\
+\hline
+{\em temps\+Finais} & recebe o array das temperaturas finais \\
+\hline
+{\em contador} & recebe o contador (numero de temperaturas) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao18_2funcoes_8c_a09e548c427cbe9e7adbe2f108fa5e216}\label{_questao18_2funcoes_8c_a09e548c427cbe9e7adbe2f108fa5e216}} 
+\index{funcoes.c@{funcoes.c}!kelvinParaCelsius@{kelvinParaCelsius}}
+\index{kelvinParaCelsius@{kelvinParaCelsius}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{kelvinParaCelsius()}{kelvinParaCelsius()}}
+{\footnotesize\ttfamily float kelvin\+Para\+Celsius (\begin{DoxyParamCaption}\item[{float}]{kelvin }\end{DoxyParamCaption})}
+
+
+
+Converter graus Kelvin para graus Celsius. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em kelvin} & Valor em kelvin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Valor em Celsius 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao18_2funcoes_8c_ac138fdffd3b1a0cad710c730d2322681}\label{_questao18_2funcoes_8c_ac138fdffd3b1a0cad710c730d2322681}} 
+\index{funcoes.c@{funcoes.c}!mediaArray@{mediaArray}}
+\index{mediaArray@{mediaArray}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{mediaArray()}{mediaArray()}}
+{\footnotesize\ttfamily float media\+Array (\begin{DoxyParamCaption}\item[{float $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Obtem a media a partir de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Numero de elementos do array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Media (retorna 0 no caso de n = 0, para prevenir divisão por 0) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao18_2funcoes_8c_a6893f5e036ef1a18017d7ec376639c45}\label{_questao18_2funcoes_8c_a6893f5e036ef1a18017d7ec376639c45}} 
+\index{funcoes.c@{funcoes.c}!obterMaior@{obterMaior}}
+\index{obterMaior@{obterMaior}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{obterMaior()}{obterMaior()}}
+{\footnotesize\ttfamily float obter\+Maior (\begin{DoxyParamCaption}\item[{float $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Obtem o maior valor de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Numero de elementos do array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Maior valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao18_2funcoes_8c_aefbab23e890af67688d7901bc834f90c}\label{_questao18_2funcoes_8c_aefbab23e890af67688d7901bc834f90c}} 
+\index{funcoes.c@{funcoes.c}!obterMenor@{obterMenor}}
+\index{obterMenor@{obterMenor}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{obterMenor()}{obterMenor()}}
+{\footnotesize\ttfamily float obter\+Menor (\begin{DoxyParamCaption}\item[{float $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Obtem o menor valor de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Numero de elementos do array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Menor valor 
+\end{DoxyReturn}

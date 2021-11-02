@@ -1,0 +1,47 @@
+Algoritmo "Questao 13"
+
+funcao verificaPrimo (num: inteiro) : inteiro
+    inicio-funcao
+        se (numero = 0 ou numero = 1)
+            retorna(0)
+        fim-se
+
+        para i <- 2 até num-1 passo 1 fazer
+            se (numero % i = 0)
+                retorna(0)
+            fim-se
+        fim-para-fazer
+
+        retorna(1)
+
+    fim-funcao
+
+Variaveis
+
+    numero, limiteInferior, limiteSuperior, somatorioPrimos, contadorPrimos: inteiro
+    mediaPrimos: real
+
+Inicio
+
+    limiteInferior <- 0
+    limiteSuperior <- 100
+    somatorioPrimos <- 0 
+    contadorPrimos <- 0
+
+    srand(time(NULL))
+
+    para i <- 0 até 69 passo 1 fazer
+        numero <- rand() % (limiteSuperior - limiteInferior) + limiteInferior
+        escrever(numero)
+        se(verificaPrimo(numero) = 1)
+            somatorioPrimos <- somatorioPrimos + numero
+            contadorPrimos <- contadorPrimos + 1
+        fim-se
+    fim-para-fazer
+
+    mediaPrimos <- somatorioPrimos / contadorPrimos
+
+    escrever(somatorioPrimos)
+    escrever(mediaPrimos)
+
+Fim

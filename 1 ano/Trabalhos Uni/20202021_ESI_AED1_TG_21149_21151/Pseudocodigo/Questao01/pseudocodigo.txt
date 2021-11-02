@@ -1,0 +1,93 @@
+Enunciado: 
+Crie uma aplicação que solicite a quantidade de entregas no final do dia de
+cada um dos cinco paquetes contratados por uma empresa de entrega de
+refeições ao domicílio e que calcule a média das quantidades de refeições
+entregues por paquete e a soma das refeições entregues pelos paquetes com
+mais de 4 refeições entregues nesse dia.
+
+///
+
+1º passo: analisar como calcular a média das quantidades de refeições entregues por paquete -> somatório das quantidades de refeições entregues por todos os paquetes / nr de paquetes ((quantidadePaquete1 + quantidadePaquete2 + quantidadePaquete3 + quantidadePaquete4+ quantidadePaquete5) / 5)
+2º passo: analisar como calcular a soma das refeições entregues pelos paquetes com mais de 4 refeiçõs entregues nesse dia -> se quantidadePaquete > 4 {somatorio = somatorio + quantidadePaquete}
+
+3º passo: obter quantidade de refeições entregues por cada paquete (uma de cada vez)
+4º passo: se for > 4, adicionar a somatorioMaiorQue4
+5º passo: adicionar a somatorioMedia
+6º passo (depois de obter as 5 quantidades): media = somatorioMedia / 5
+7º passo: mostrar o somatorioMaiorQue4
+8º passo: mostrar a media
+
+Algoritmo "Questão 1"
+
+Variaveis
+    somatorioMaiorQue4, somatorioMedia, quantidade: inteiro
+    media: real
+
+Inicio
+
+    //paquete1
+
+    Ler(quantidade);
+
+    Se (quantidade > 4)
+        somatorioMaiorQue4 <- somatorioMaiorQue4 + quantidade;
+    Fim-Se
+
+    somatorioMedia <- somatorioMedia + quantidade;
+
+    //paquete2
+
+    Ler(quantidade);
+
+    Se (quantidade > 4)
+        somatorioMaiorQue4 <- somatorioMaiorQue4 + quantidade;
+    Fim-Se
+
+    somatorioMedia <- somatorioMedia + quantidade;
+
+    //paquete3
+
+    Ler(quantidade);
+
+    Se (quantidade > 4)
+        somatorioMaiorQue4 <- somatorioMaiorQue4 + quantidade;
+    Fim-Se
+
+    somatorioMedia <- somatorioMedia + quantidade;
+
+    //paquete4
+
+    Ler(quantidade);
+
+    Se (quantidade > 4)
+        somatorioMaiorQue4 <- somatorioMaiorQue4 + quantidade;
+    Fim-Se
+
+    somatorioMedia <- somatorioMedia + quantidade;
+    
+
+
+    //paquete5
+
+    Ler(quantidade);
+
+    Se (quantidade > 4)
+        somatorioMaiorQue4 <- somatorioMaiorQue4 + quantidade;
+    Fim-Se
+
+    somatorioMedia <- somatorioMedia + quantidade;
+
+    //calculos finais
+
+    media <- somatorioMedia / 5; //não esquecer que assim é divisão inteira! (na implementação em código posterior)
+
+    //amostragem de valores
+
+    Escrever(media);
+    Escrever(somatorioMaiorQue4);
+
+Fim
+
+
+
+ 

@@ -1,0 +1,21 @@
+1 passo - calcular o sucessor e antecessor do numero inteiro  numero + 1 V numero - 1
+2 passo - pedir o numero 
+
+
+Algoritmo
+var
+
+numIns, numMais, numMenos = real
+
+Inico 
+
+ler(numIns)
+
+numMais = numIns + 1
+numMenos = numIns -2
+
+escrever(numMais)
+escrever(numMenos)
+
+Fim
+

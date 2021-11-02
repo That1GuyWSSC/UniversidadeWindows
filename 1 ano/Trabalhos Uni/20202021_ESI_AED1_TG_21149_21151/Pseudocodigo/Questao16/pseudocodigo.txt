@@ -1,0 +1,28 @@
+Algoritmo "Questao 16"
+
+funcao contaPalavras (texto: caracter, caracter: caracter) : inteiro
+    Variaveis
+        contador: inteiro
+    inicio-funcao
+        contador <- 0
+        enquanto (*texto != '\0')
+            se(*texto = caracter)
+                contador <- contador + 1
+            fim-se
+            texto <- texto + 1
+        fim-enquanto
+        retorna(contador+1)
+    fim-funcao
+
+Variaveis
+
+    texto[28]: caracter
+    letra: caracter
+
+Inicio
+
+    texto <- "Algoritmos e uma disciplina"
+    letra <- ' '
+    escrever(contaPalavras(texto, letra))
+
+Fim

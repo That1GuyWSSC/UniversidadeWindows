@@ -1,0 +1,60 @@
+Algoritmo "Questao 17"
+
+funcao contaCaracter (texto: caracter, caracter: caracter) : inteiro
+    Variaveis
+        contador: inteiro
+    inicio-funcao
+        contador <- 0
+        enquanto (*texto != '\0')
+            se(*texto = caracter)
+                contador <- contador + 1
+            fim-se
+            texto <- texto + 1
+        fim-enquanto
+
+        retorna(contador)
+
+    fim-funcao
+
+procedimento removeEspacos(texto: caracter, textoFinal: caracter)
+
+    Variaveis
+        contador: inteiro
+
+    inicio-funcao
+        contador <- 0 
+        enquanto (*texto != '\0')
+            se (*texto != ' ')
+                *textoFinal <- *texto
+                textoFinal <- textoFinal + 1
+                texto <- texto + 1
+            fim-se
+            senao
+                texto <- texto + 1
+            fim-senao
+        fim-enquanto
+    fim-funcao
+
+Variaveis
+
+    texto: caracter
+    letra: caracter
+    tamanhoInicial, tamanhoFinal: inteiro
+    textoFinal: caracter
+
+Inicio
+
+    texto[27] <- "Algoritmos e uma disciplina"
+    letra <- ' '
+    tamanhoInicial <- sizeof(texto) / sizeof(char)
+    tamanhoFinal <- tamanhoInicial - (contaCaracter(texto, letra))
+
+    textoFinal[tamanhoFinal]
+
+    removeEspacos(texto, textoFinal)
+
+    para i <- 0 até tamanhoFinal-1 passo 1 fazer
+        escrever(textoFinal[i])
+    fim-para-fazer
+
+Fim

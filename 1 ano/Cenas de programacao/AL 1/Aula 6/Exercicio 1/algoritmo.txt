@@ -1,0 +1,25 @@
+Algoritmo 
+
+
+Variaveis
+
+
+     numero, contador : inteiro
+
+Inicio
+    contador <- 0
+    escrever("Insira um numero = ou inferior a 0 para sair)
+
+    enquanto numero > 0 fazer
+
+         contador <-- contador +1
+
+        escrever("Insira um numero = ou inferior a 0 para sair) 
+        ler(numero)
+
+    fim-enquanto
+
+    escrever(contador)
+
+
+fim

@@ -1,0 +1,7 @@
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaArray\bin\Debug\AulaArray.exe.config
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaArray\bin\Debug\AulaArray.exe
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaArray\bin\Debug\AulaArray.pdb
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaArray\obj\Debug\AulaASeguirADoArray.csprojAssemblyReference.cache
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaArray\obj\Debug\AulaASeguirADoArray.csproj.CoreCompileInputs.cache
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaArray\obj\Debug\AulaArray.exe
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaArray\obj\Debug\AulaArray.pdb

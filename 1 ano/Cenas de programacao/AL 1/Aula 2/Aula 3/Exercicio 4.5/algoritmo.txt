@@ -1,0 +1,25 @@
+1 passo - calcular a area (base * altura)/2
+2 passo - pedir a medida da base 
+3 passo - pedir a medida da altura
+4 passo - mostrar o resultado da area
+
+Inicio
+
+var
+
+medBase, medAltura, area : real
+constante = 2 
+
+Inicio
+
+ler(medBase)
+ler(medAltura)
+
+area = (medBase * medAltura) / 2
+
+escrever(area)
+
+Fim
+
+
+

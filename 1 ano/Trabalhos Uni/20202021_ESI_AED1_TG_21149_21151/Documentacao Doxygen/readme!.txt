@@ -1,0 +1,4 @@
+- Abrir pasta HTML
+- Abrir index.html
+- Carregar em files
+- Ver documentação de cada função de cada ficheiro

@@ -1,0 +1,39 @@
+Algoritmo "Questao 9"
+
+funcao obterInverso (numero: inteiro) : inteiro
+    inicio-funcao
+
+        aux: inteiro
+        inverso: inteiro
+
+        aux <- numero
+        inverso <- 0
+
+        enquanto (aux != 0)
+            inverso <- inverso * 10 + aux % 10
+            aux = aux / 10
+        fim-enquanto
+
+        retornar(inverso)
+
+    fim-funcao
+
+Variaveis
+
+    original, inverso: inteiros
+
+Inicio
+
+    para a <- 999 ate 100 passo -1 fazer
+        para b <- 999 ate 100 passo -1 fazer
+            original <- a * b
+            inverso <- obterInverso(a*b)
+            se (inverso = original)
+                escrever(inverso)
+                terminarprograma
+            fim-se
+        fim-para-fazer
+    fim-para-fazer
+
+
+Fim

@@ -1,0 +1,45 @@
+Enunciado:
+Um ano é bissexto se é divisível por 4, exceto se, além de ser divisível por
+4, for também divisível por 100. Caso não seja divisível por 4 e for
+divisível por 400 também é bissexto. Crie uma aplicação que leia o valor de
+um ano e escreva se o ano é ou não bissexto. 
+
+1 passo - obter o ano
+2 passo - ver se o ano e divisel por 4 e nao por 100 
+3 passo - ver se o ano nao e divisel por 4 mas divisel por 400
+4 passo - o ano nao e bissexto quando as duas condicoes de cada passo falham
+6 passo - mostrar se e o ano e bissexto ou nao
+
+Algoritmo "Ano Bissexto"
+
+variaveis
+
+ano : inteiro
+bissexto : booleano
+
+Inicio
+
+bissexto <-- 0
+
+ler(ano)
+
+Se(ano % 4 = 0)
+    Se(ano % 100 != 0)
+        bissexto <-- 1
+    Fim-se
+Fim-se
+
+Se(ano % 400 = 0)
+        bissexto <-- 1
+Fim-se
+
+Se(bissexto = 1)
+    escrever("o ano e bissexto")
+Fim-se
+Senao
+    escrever("o ano nao e bissexto")
+Fim-Senao
+
+    
+
+

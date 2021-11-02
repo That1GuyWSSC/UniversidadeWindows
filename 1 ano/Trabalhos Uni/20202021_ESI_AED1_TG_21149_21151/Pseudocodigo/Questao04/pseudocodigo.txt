@@ -1,0 +1,63 @@
+Enunciado:
+Com o objetivo de promover a vacinação, um veterinário pretende atribuir um
+desconto nas vacinas para gatos mediante o seu comprimento . Crie uma
+aplicação que solicite os dados de um gato e indique ao utilizador qual o
+desconto a atribuir com base no quadro seguinte. 
+
+1 passo: desconstruir os intervalos para verificações com operadores relacionais
+
+[6: 10[, genero F, 10% desconto ||||| comprimento >= 6 && comprimento < 10
+[10: 15[, genero M, 9% desconto ||||| comprimento >= 10 && comprimento < 15
+[15: 18[, genero F, 8% desconto ||||| comprimento >= 15 && comprimento < 18
+[18: 25[, genero M e F, 7% desconto ||||| comprimento >= 18 && comprimento < 25
+restantes, 5% desconto ||||| (else final)
+
+2 passo: perceber que dados temos de obter do gato
+comprimento e género
+
+3 passo: obter dados, verificar as condições, e devolver o valor de desconto
+
+Algoritmo "Desconto vacinas"
+
+Variaveis
+
+    comprimento: real
+    genero: caracter
+    desconto: inteiro
+
+    Inicio
+
+        ler (comprimento)
+        ler (genero)
+
+        se (comprimento >= 6 && comprimento < 10)
+            se (genero = F)
+                desconto <- 10
+            fim-se
+        fim-se
+
+        se (comprimento >= 10 && comprimento < 15)
+            se (genero = M)
+                desconto <- 9
+            fim-se
+        fim-se
+
+        se (comprimento >= 15 && comprimento < 18)
+            se (genero = F)
+                desconto <- 8
+            fim-se
+        fim-se
+
+        se (comprimento >= 18 && comprimento < 25)
+            desconto <- 7       
+        fim-se
+
+        senao
+            desconto <- 5
+        fim-senao
+
+        escrever (desconto)
+
+Fim
+
+

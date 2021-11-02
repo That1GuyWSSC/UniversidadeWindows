@@ -1,0 +1,22 @@
+1 passo - calcular a media do aluno (notaPt + notaEn + notaMt) / 3
+2 passo - pedir notaPt
+3 passo - pedir notaEn
+4 passo - pedir notaMt
+5 passo - mostrar a media do aluno
+
+Algoritmo
+var 
+
+notaMt, notaEn, notaPt, media : real
+
+Inicio
+
+ler(notaPt)
+ler(notaEn)
+ler(notaMt)
+
+media = (notaPt + notaEn + notaMt) / 3
+
+escrever(media)
+
+Fim

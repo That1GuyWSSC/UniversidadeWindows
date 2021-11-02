@@ -1,0 +1,24 @@
+Algoritmo "Questao 5"
+
+Variaveis
+
+    num, somatorio: inteiro
+
+
+Inicio
+
+    ler(num)
+
+    para i <- 1 até num passo 1 fazer
+
+        escrever(i);
+        somatorio <- somatorio + i
+
+    fim-para-fazer
+
+    escrever(somatorio)
+
+Fim
+
+
+

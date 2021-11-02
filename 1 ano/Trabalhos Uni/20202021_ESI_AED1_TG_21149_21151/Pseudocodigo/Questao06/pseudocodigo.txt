@@ -1,0 +1,27 @@
+1 passo: obter o numero de idades que vamos receber
+2 passo: obter o valor de cada idade, e repetir este procedimento consoante o numero obtido no passo 1
+3 passo: dentro deste ciclo de repetição, confirmar se (idade >= 15 && idade < 48)
+4 passo: caso a condição anterior se verifique, incrementar um contador criado anteriormente
+5 passo: devolver o contador
+
+Algoritmo "Questao 6"
+
+Variaveis
+
+    idade, contador: inteiros
+
+Inicio
+
+    idade <- 0
+    contador <- 0
+
+    enquanto (idade != -1)
+        ler(idade)
+        se (idade >= 15 && idade < 48)
+            contador <- contador + 1
+        fim-se
+    fim-enquanto
+
+    escrever(contador)
+
+Fim

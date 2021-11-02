@@ -1,0 +1,22 @@
+1 passo - numero !=33
+2 passo - pedir o numero
+3 passo - se a expressao verdadeira mostrar "o numero e diferente de 33"
+4 passo - mostrar o resultado
+
+Algoritmo
+
+variaveis
+
+numIns : real 
+
+inicio
+
+ler(numIns)
+
+se o numero for != de 33
+
+  escrever "o numero e diferente de 33"
+
+fim - se
+
+Fim

@@ -1,0 +1,26 @@
+Algoritmo "Questao 10"
+
+funcao somatorioNum (num: inteiro) : inteiro
+    inicio-funcao
+
+        somatorio: inteiro
+        somatorio <- 0
+
+        para i <- 1 ate num passo 1 fazer
+            somatorio <- somatorio + i
+        fim-para-fazer
+
+        retornar(somatorio)
+
+    fim-funcao
+
+Variaveis
+
+    num: inteiro
+
+Inicio
+
+    ler(num)
+    escrever(somatorioNum(num))
+
+Fim

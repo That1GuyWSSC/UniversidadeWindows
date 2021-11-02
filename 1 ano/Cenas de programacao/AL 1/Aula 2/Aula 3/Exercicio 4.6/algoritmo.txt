@@ -1,0 +1,20 @@
+1 passo - calcular a area do circulo (raio^2) * Pi
+2 passo - pedir o raio do circulo
+3 passo - mostar a area do circulo
+
+
+Algoritmo
+var
+
+raio, area : real
+pi e uma constante
+
+Inicio
+
+ler(raio)
+
+area = (raio^2) * Pi
+
+escrever(area)
+
+Fim

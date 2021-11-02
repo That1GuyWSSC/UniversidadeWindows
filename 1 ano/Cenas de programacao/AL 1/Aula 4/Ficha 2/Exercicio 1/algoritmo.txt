@@ -1,0 +1,25 @@
+1 passo - Expressao logica - idade > 30
+2 passo - pedir a idade
+3 passo - se a expressao logica for verdadeira somo 10 a idade
+4 passo - mostrar o resultado da idade 
+
+
+Algoritmo
+
+ variaveis 
+
+ idade - inteiro 
+ 
+ inicio
+
+ ler(idade)
+
+se idade > 30 entao
+
+  idade <- idade + 10
+
+ fim-se
+
+  escrever(idade)
+
+Fim

@@ -1,0 +1,4 @@
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaHoje\obj\Debug\Aula.csprojAssemblyReference.cache
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaHoje\obj\Debug\Aula.csproj.CoreCompileInputs.cache
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaHoje\obj\Debug\AulaHoje.exe
+D:\Universidade\Cenas de programacao\LP 2\Aulas\AulaHoje\obj\Debug\AulaHoje.pdb

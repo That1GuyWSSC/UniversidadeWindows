@@ -1,0 +1,24 @@
+1 um numero e positivo ou negativo ou e 0
+2 - recolher o numero
+3 - se numero e 0
+    neutro
+ se numero > 0
+    positivo
+ se numero < 0
+    negativo
+
+
+
+Algortimo 
+
+variaveis 
+
+ numero :intiero
+
+
+inicio
+
+ler(numero)
+
+ se numero = 0 
+ 

@@ -1,0 +1,502 @@
+\hypertarget{_questao20_2funcoes_8h}{}\doxysection{Codigo/\+Questao20/funcoes.h File Reference}
+\label{_questao20_2funcoes_8h}\index{Codigo/Questao20/funcoes.h@{Codigo/Questao20/funcoes.h}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_clinica}{Clinica}} \mbox{\hyperlink{_questao20_2funcoes_8h_a71ce7fe0c70e1820ecd955fb93fa8347}{criar\+Clinica}} (\mbox{\hyperlink{struct_clinica}{Clinica}} clinica)
+\begin{DoxyCompactList}\small\item\em Define dados para uma clinica, recebe-\/os do utilizador. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_aa21b16332807dd1f5da4a74fd8aebbb0}{listar\+Funcionario}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} funcionario)
+\begin{DoxyCompactList}\small\item\em Lista um funcionário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a69692b5460597c0fc506aabd4198febe}{listar\+Funcionarios\+Clinica}} (\mbox{\hyperlink{struct_clinica}{Clinica}} clinica)
+\begin{DoxyCompactList}\small\item\em Lista todos os funcionários de uma clínica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_afc507711b2b7948be3d7cdbc7b8e5b1c}{listar\+Funcionarios\+Ativos\+Clinica}} (\mbox{\hyperlink{struct_clinica}{Clinica}} clinica)
+\begin{DoxyCompactList}\small\item\em Lista apenas os funcionários ativos de uma clínica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_aa4babdda3b35e146a545f567fcd13fb3}{limpar\+Buffer}} ()
+\begin{DoxyCompactList}\small\item\em Limpar o buffer do teclado (para evitar problemas nos scanf\textquotesingle{}s) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a77bcdc0243a57a7a20ced3d4c62b6c53}{free\+Clinicas\+Funcionarios}} (\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas, int num\+Clinicas)
+\begin{DoxyCompactList}\small\item\em Free na memória dos arrays de funcionários dentro das structs \mbox{\hyperlink{struct_clinica}{Clinica}} dentro do array de clínicas. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_questao20_2funcoes_8h_aaccb2e04be78f6b5492f5f7ea13ceeb2}{obter\+Indice\+Clinica\+Por\+Numero}} (\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas, int num\+Clinicas, int num\+Clinica)
+\begin{DoxyCompactList}\small\item\em Devolve o indice (no array de clinicas) de uma clinica a partir do num\+Clinica. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_clinica}{Clinica}} \mbox{\hyperlink{_questao20_2funcoes_8h_a17ca131ccf7e8c9883dc7a7a914fd186}{inativar\+Funcionario\+Por\+Numero}} (\mbox{\hyperlink{struct_clinica}{Clinica}} clinica, int num\+Funcionario)
+\begin{DoxyCompactList}\small\item\em Inativa um funcionário a partir do número do mesmo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_questao20_2funcoes_8h_afdfe7c409cadd89f7ab3bf49feea2047}{indice\+Clinica\+Por\+Numero}} (\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas, int num\+Clinicas, int num\+Clinica)
+\begin{DoxyCompactList}\small\item\em Devolve o indice da clinica a partir do numero da mesma. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a70b125391eec4f9121f68d66fce9c900}{texto\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Texto do menu (para não o escrever várias vezes) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a982db6340799bace3409740445b27b10}{menu}} (\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas, int num\+Clinicas, \mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, int $\ast$num\+Utentes, \mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$consultas, int $\ast$num\+Consultas)
+\begin{DoxyCompactList}\small\item\em Menu de opções. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_aa0501de474cfa39efc76d24da80fcea1}{criar\+Utente}} (\mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, int num\+Utentes, int indice\+Novo\+Utente)
+\begin{DoxyCompactList}\small\item\em Cria um utente, verifica se o numero S\+NS é unico. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_af385172df9d947d7312dda48a103f025}{listar\+Utente}} (\mbox{\hyperlink{struct_utente}{Utente}} utente)
+\begin{DoxyCompactList}\small\item\em Listar um utente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_ab3f2e7e42e5a0f926fdba288b116c7cc}{listar\+Utentes}} (\mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, int num\+Utentes)
+\begin{DoxyCompactList}\small\item\em Listar todos os utentes. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a06567091bd3eac8e3fe0dd455a98bf28}{listar\+Utentes\+Ativos}} (\mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, int num\+Utentes)
+\begin{DoxyCompactList}\small\item\em Listar apenas utentes ativos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_af910fd740547dfd7237b3a8c8b6807b5}{inativar\+Utente\+Pelo\+Numero\+S\+NS}} (\mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, int num\+Utentes, int num\+S\+NS)
+\begin{DoxyCompactList}\small\item\em Inativa um utente a partir do seu número de S\+NS. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a944352263c06d64dfa7d64c48d771a76}{criar\+Consulta}} (\mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$consultas, int indice\+Consulta, \mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, int num\+Utentes, \mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas, int num\+Clinicas)
+\begin{DoxyCompactList}\small\item\em Cria uma consulta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a8bbda51c13b0a74f2b27d95010e17377}{listar\+Consulta}} (\mbox{\hyperlink{struct_consulta}{Consulta}} consulta, \mbox{\hyperlink{struct_utente}{Utente}} utente, \mbox{\hyperlink{struct_funcionario}{Funcionario}} funcionario)
+\begin{DoxyCompactList}\small\item\em Lista uma consulta. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_af88cea2874e53dcef37f229dcb14e3a2}{listar\+Consultas}} (\mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$consultas, int num\+Consultas, \mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, \mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas)
+\begin{DoxyCompactList}\small\item\em Lista todas as consultas. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_aa579f83fcef60d89986f552b06317435}{listar\+Consultas\+Ativas}} (\mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$consultas, int num\+Consultas, \mbox{\hyperlink{struct_utente}{Utente}} $\ast$utentes, \mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas)
+\begin{DoxyCompactList}\small\item\em Lista as consultas ativas, apenas. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_consulta}{Consulta}} \mbox{\hyperlink{_questao20_2funcoes_8h_a582f543cee22d2881dbeeb7c71f34814}{inativar\+Consulta}} (\mbox{\hyperlink{struct_consulta}{Consulta}} consulta)
+\begin{DoxyCompactList}\small\item\em Inativa uma consulta. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_questao20_2funcoes_8h_ad42d58cf583a3207b0e0d48624ffaee0}{idade\+Funcionario}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} funcionario, int dia\+Hoje, int mes\+Hoje, int ano\+Hoje)
+\begin{DoxyCompactList}\small\item\em Retorna a idade de um funcionário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_a187cc0b9977d1463242787e192244d57}{mostrar\+Media\+Idades\+Por\+Clinica}} (\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas, int num\+Clinicas)
+\begin{DoxyCompactList}\small\item\em Mostra a media de idades por clinica, por equipa. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao20_2funcoes_8h_abd79ca81efe9462198b12638d2cdcdae}{mostrar\+Soma\+Vencimentos\+Por\+Genero}} (\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$clinicas, int num\+Clinicas)
+\begin{DoxyCompactList}\small\item\em Mostra os vencimentos por género e por equipa de uma clínica. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{_questao20_2funcoes_8h_a7ea76ef7e0e4241fc5b99811e7e5f69c}{somatorio\+Vencimentos\+Clinica}} (\mbox{\hyperlink{struct_clinica}{Clinica}} clinica)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a71ce7fe0c70e1820ecd955fb93fa8347}\label{_questao20_2funcoes_8h_a71ce7fe0c70e1820ecd955fb93fa8347}} 
+\index{funcoes.h@{funcoes.h}!criarClinica@{criarClinica}}
+\index{criarClinica@{criarClinica}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{criarClinica()}{criarClinica()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_clinica}{Clinica}} criar\+Clinica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}}}]{clinica }\end{DoxyParamCaption})}
+
+
+
+Define dados para uma clinica, recebe-\/os do utilizador. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinica} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_clinica}{Clinica}} Devolve a clinica à qual os dados foram atribuidos ao main 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a944352263c06d64dfa7d64c48d771a76}\label{_questao20_2funcoes_8h_a944352263c06d64dfa7d64c48d771a76}} 
+\index{funcoes.h@{funcoes.h}!criarConsulta@{criarConsulta}}
+\index{criarConsulta@{criarConsulta}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{criarConsulta()}{criarConsulta()}}
+{\footnotesize\ttfamily void criar\+Consulta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$}]{consultas,  }\item[{int}]{indice\+Consulta,  }\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{int}]{num\+Utentes,  }\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas,  }\item[{int}]{num\+Clinicas }\end{DoxyParamCaption})}
+
+
+
+Cria uma consulta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em consultas} & \\
+\hline
+{\em indice\+Consulta} & \\
+\hline
+{\em utentes} & \\
+\hline
+{\em num\+Utentes} & \\
+\hline
+{\em clinicas} & \\
+\hline
+{\em num\+Clinicas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_aa0501de474cfa39efc76d24da80fcea1}\label{_questao20_2funcoes_8h_aa0501de474cfa39efc76d24da80fcea1}} 
+\index{funcoes.h@{funcoes.h}!criarUtente@{criarUtente}}
+\index{criarUtente@{criarUtente}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{criarUtente()}{criarUtente()}}
+{\footnotesize\ttfamily void criar\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{int}]{num\+Utentes,  }\item[{int}]{indice\+Novo\+Utente }\end{DoxyParamCaption})}
+
+
+
+Cria um utente, verifica se o numero S\+NS é unico. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utentes} & \\
+\hline
+{\em num\+Utentes} & \\
+\hline
+{\em indice\+Novo\+Utente} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a77bcdc0243a57a7a20ced3d4c62b6c53}\label{_questao20_2funcoes_8h_a77bcdc0243a57a7a20ced3d4c62b6c53}} 
+\index{funcoes.h@{funcoes.h}!freeClinicasFuncionarios@{freeClinicasFuncionarios}}
+\index{freeClinicasFuncionarios@{freeClinicasFuncionarios}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{freeClinicasFuncionarios()}{freeClinicasFuncionarios()}}
+{\footnotesize\ttfamily void free\+Clinicas\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas,  }\item[{int}]{num\+Clinicas }\end{DoxyParamCaption})}
+
+
+
+Free na memória dos arrays de funcionários dentro das structs \mbox{\hyperlink{struct_clinica}{Clinica}} dentro do array de clínicas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinicas} & \\
+\hline
+{\em num\+Clinicas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_ad42d58cf583a3207b0e0d48624ffaee0}\label{_questao20_2funcoes_8h_ad42d58cf583a3207b0e0d48624ffaee0}} 
+\index{funcoes.h@{funcoes.h}!idadeFuncionario@{idadeFuncionario}}
+\index{idadeFuncionario@{idadeFuncionario}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{idadeFuncionario()}{idadeFuncionario()}}
+{\footnotesize\ttfamily int idade\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}}}]{funcionario,  }\item[{int}]{dia\+Hoje,  }\item[{int}]{mes\+Hoje,  }\item[{int}]{ano\+Hoje }\end{DoxyParamCaption})}
+
+
+
+Retorna a idade de um funcionário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & Funcionário para o qual vai retornar a idade \\
+\hline
+{\em dia\+Hoje} & Dia de hoje \\
+\hline
+{\em mes\+Hoje} & Mês de hoje \\
+\hline
+{\em ano\+Hoje} & Ano de hoje \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Retorna a idade 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a582f543cee22d2881dbeeb7c71f34814}\label{_questao20_2funcoes_8h_a582f543cee22d2881dbeeb7c71f34814}} 
+\index{funcoes.h@{funcoes.h}!inativarConsulta@{inativarConsulta}}
+\index{inativarConsulta@{inativarConsulta}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{inativarConsulta()}{inativarConsulta()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_consulta}{Consulta}} inativar\+Consulta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_consulta}{Consulta}}}]{consulta }\end{DoxyParamCaption})}
+
+
+
+Inativa uma consulta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em consulta} & Recebe uma consulta para inativar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_consulta}{Consulta}} Devolve consulta inativada 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a17ca131ccf7e8c9883dc7a7a914fd186}\label{_questao20_2funcoes_8h_a17ca131ccf7e8c9883dc7a7a914fd186}} 
+\index{funcoes.h@{funcoes.h}!inativarFuncionarioPorNumero@{inativarFuncionarioPorNumero}}
+\index{inativarFuncionarioPorNumero@{inativarFuncionarioPorNumero}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{inativarFuncionarioPorNumero()}{inativarFuncionarioPorNumero()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_clinica}{Clinica}} inativar\+Funcionario\+Por\+Numero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}}}]{clinica,  }\item[{int}]{num\+Funcionario }\end{DoxyParamCaption})}
+
+
+
+Inativa um funcionário a partir do número do mesmo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinica} & \\
+\hline
+{\em num\+Funcionario} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{struct_clinica}{Clinica}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_af910fd740547dfd7237b3a8c8b6807b5}\label{_questao20_2funcoes_8h_af910fd740547dfd7237b3a8c8b6807b5}} 
+\index{funcoes.h@{funcoes.h}!inativarUtentePeloNumeroSNS@{inativarUtentePeloNumeroSNS}}
+\index{inativarUtentePeloNumeroSNS@{inativarUtentePeloNumeroSNS}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{inativarUtentePeloNumeroSNS()}{inativarUtentePeloNumeroSNS()}}
+{\footnotesize\ttfamily void inativar\+Utente\+Pelo\+Numero\+S\+NS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{int}]{num\+Utentes,  }\item[{int}]{num\+S\+NS }\end{DoxyParamCaption})}
+
+
+
+Inativa um utente a partir do seu número de S\+NS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utentes} & \\
+\hline
+{\em num\+Utentes} & \\
+\hline
+{\em num\+S\+NS} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_afdfe7c409cadd89f7ab3bf49feea2047}\label{_questao20_2funcoes_8h_afdfe7c409cadd89f7ab3bf49feea2047}} 
+\index{funcoes.h@{funcoes.h}!indiceClinicaPorNumero@{indiceClinicaPorNumero}}
+\index{indiceClinicaPorNumero@{indiceClinicaPorNumero}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{indiceClinicaPorNumero()}{indiceClinicaPorNumero()}}
+{\footnotesize\ttfamily int indice\+Clinica\+Por\+Numero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas,  }\item[{int}]{num\+Clinicas,  }\item[{int}]{num\+Clinica }\end{DoxyParamCaption})}
+
+
+
+Devolve o indice da clinica a partir do numero da mesma. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinicas} & \\
+\hline
+{\em num\+Clinicas} & \\
+\hline
+{\em num\+Clinica} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_aa4babdda3b35e146a545f567fcd13fb3}\label{_questao20_2funcoes_8h_aa4babdda3b35e146a545f567fcd13fb3}} 
+\index{funcoes.h@{funcoes.h}!limparBuffer@{limparBuffer}}
+\index{limparBuffer@{limparBuffer}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{limparBuffer()}{limparBuffer()}}
+{\footnotesize\ttfamily void limpar\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Limpar o buffer do teclado (para evitar problemas nos scanf\textquotesingle{}s) 
+
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a8bbda51c13b0a74f2b27d95010e17377}\label{_questao20_2funcoes_8h_a8bbda51c13b0a74f2b27d95010e17377}} 
+\index{funcoes.h@{funcoes.h}!listarConsulta@{listarConsulta}}
+\index{listarConsulta@{listarConsulta}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarConsulta()}{listarConsulta()}}
+{\footnotesize\ttfamily void listar\+Consulta (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_consulta}{Consulta}}}]{consulta,  }\item[{\mbox{\hyperlink{struct_utente}{Utente}}}]{utente,  }\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}}}]{funcionario }\end{DoxyParamCaption})}
+
+
+
+Lista uma consulta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em consulta} & \\
+\hline
+{\em utente} & \\
+\hline
+{\em funcionario} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_af88cea2874e53dcef37f229dcb14e3a2}\label{_questao20_2funcoes_8h_af88cea2874e53dcef37f229dcb14e3a2}} 
+\index{funcoes.h@{funcoes.h}!listarConsultas@{listarConsultas}}
+\index{listarConsultas@{listarConsultas}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarConsultas()}{listarConsultas()}}
+{\footnotesize\ttfamily void listar\+Consultas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$}]{consultas,  }\item[{int}]{num\+Consultas,  }\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas }\end{DoxyParamCaption})}
+
+
+
+Lista todas as consultas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em consultas} & \\
+\hline
+{\em num\+Consultas} & \\
+\hline
+{\em utentes} & \\
+\hline
+{\em clinicas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_aa579f83fcef60d89986f552b06317435}\label{_questao20_2funcoes_8h_aa579f83fcef60d89986f552b06317435}} 
+\index{funcoes.h@{funcoes.h}!listarConsultasAtivas@{listarConsultasAtivas}}
+\index{listarConsultasAtivas@{listarConsultasAtivas}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarConsultasAtivas()}{listarConsultasAtivas()}}
+{\footnotesize\ttfamily void listar\+Consultas\+Ativas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$}]{consultas,  }\item[{int}]{num\+Consultas,  }\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas }\end{DoxyParamCaption})}
+
+
+
+Lista as consultas ativas, apenas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em consultas} & \\
+\hline
+{\em num\+Consultas} & \\
+\hline
+{\em utentes} & \\
+\hline
+{\em clinicas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_aa21b16332807dd1f5da4a74fd8aebbb0}\label{_questao20_2funcoes_8h_aa21b16332807dd1f5da4a74fd8aebbb0}} 
+\index{funcoes.h@{funcoes.h}!listarFuncionario@{listarFuncionario}}
+\index{listarFuncionario@{listarFuncionario}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarFuncionario()}{listarFuncionario()}}
+{\footnotesize\ttfamily void listar\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}}}]{funcionario }\end{DoxyParamCaption})}
+
+
+
+Lista um funcionário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em funcionario} & Recebe o funcionário que vai listar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_afc507711b2b7948be3d7cdbc7b8e5b1c}\label{_questao20_2funcoes_8h_afc507711b2b7948be3d7cdbc7b8e5b1c}} 
+\index{funcoes.h@{funcoes.h}!listarFuncionariosAtivosClinica@{listarFuncionariosAtivosClinica}}
+\index{listarFuncionariosAtivosClinica@{listarFuncionariosAtivosClinica}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarFuncionariosAtivosClinica()}{listarFuncionariosAtivosClinica()}}
+{\footnotesize\ttfamily void listar\+Funcionarios\+Ativos\+Clinica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}}}]{clinica }\end{DoxyParamCaption})}
+
+
+
+Lista apenas os funcionários ativos de uma clínica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinica} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a69692b5460597c0fc506aabd4198febe}\label{_questao20_2funcoes_8h_a69692b5460597c0fc506aabd4198febe}} 
+\index{funcoes.h@{funcoes.h}!listarFuncionariosClinica@{listarFuncionariosClinica}}
+\index{listarFuncionariosClinica@{listarFuncionariosClinica}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarFuncionariosClinica()}{listarFuncionariosClinica()}}
+{\footnotesize\ttfamily void listar\+Funcionarios\+Clinica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}}}]{clinica }\end{DoxyParamCaption})}
+
+
+
+Lista todos os funcionários de uma clínica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinica} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_af385172df9d947d7312dda48a103f025}\label{_questao20_2funcoes_8h_af385172df9d947d7312dda48a103f025}} 
+\index{funcoes.h@{funcoes.h}!listarUtente@{listarUtente}}
+\index{listarUtente@{listarUtente}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarUtente()}{listarUtente()}}
+{\footnotesize\ttfamily void listar\+Utente (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_utente}{Utente}}}]{utente }\end{DoxyParamCaption})}
+
+
+
+Listar um utente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utente} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_ab3f2e7e42e5a0f926fdba288b116c7cc}\label{_questao20_2funcoes_8h_ab3f2e7e42e5a0f926fdba288b116c7cc}} 
+\index{funcoes.h@{funcoes.h}!listarUtentes@{listarUtentes}}
+\index{listarUtentes@{listarUtentes}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarUtentes()}{listarUtentes()}}
+{\footnotesize\ttfamily void listar\+Utentes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{int}]{num\+Utentes }\end{DoxyParamCaption})}
+
+
+
+Listar todos os utentes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utentes} & \\
+\hline
+{\em num\+Utentes} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a06567091bd3eac8e3fe0dd455a98bf28}\label{_questao20_2funcoes_8h_a06567091bd3eac8e3fe0dd455a98bf28}} 
+\index{funcoes.h@{funcoes.h}!listarUtentesAtivos@{listarUtentesAtivos}}
+\index{listarUtentesAtivos@{listarUtentesAtivos}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{listarUtentesAtivos()}{listarUtentesAtivos()}}
+{\footnotesize\ttfamily void listar\+Utentes\+Ativos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{int}]{num\+Utentes }\end{DoxyParamCaption})}
+
+
+
+Listar apenas utentes ativos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em utentes} & \\
+\hline
+{\em num\+Utentes} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a982db6340799bace3409740445b27b10}\label{_questao20_2funcoes_8h_a982db6340799bace3409740445b27b10}} 
+\index{funcoes.h@{funcoes.h}!menu@{menu}}
+\index{menu@{menu}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas,  }\item[{int}]{num\+Clinicas,  }\item[{\mbox{\hyperlink{struct_utente}{Utente}} $\ast$}]{utentes,  }\item[{int $\ast$}]{num\+Utentes,  }\item[{\mbox{\hyperlink{struct_consulta}{Consulta}} $\ast$}]{consultas,  }\item[{int $\ast$}]{num\+Consultas }\end{DoxyParamCaption})}
+
+
+
+Menu de opções. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinicas} & \\
+\hline
+{\em num\+Clinicas} & \\
+\hline
+{\em utentes} & \\
+\hline
+{\em num\+Utentes} & \\
+\hline
+{\em consultas} & \\
+\hline
+{\em num\+Consultas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a187cc0b9977d1463242787e192244d57}\label{_questao20_2funcoes_8h_a187cc0b9977d1463242787e192244d57}} 
+\index{funcoes.h@{funcoes.h}!mostrarMediaIdadesPorClinica@{mostrarMediaIdadesPorClinica}}
+\index{mostrarMediaIdadesPorClinica@{mostrarMediaIdadesPorClinica}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{mostrarMediaIdadesPorClinica()}{mostrarMediaIdadesPorClinica()}}
+{\footnotesize\ttfamily void mostrar\+Media\+Idades\+Por\+Clinica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas,  }\item[{int}]{num\+Clinicas }\end{DoxyParamCaption})}
+
+
+
+Mostra a media de idades por clinica, por equipa. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinicas} & \\
+\hline
+{\em num\+Clinicas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_abd79ca81efe9462198b12638d2cdcdae}\label{_questao20_2funcoes_8h_abd79ca81efe9462198b12638d2cdcdae}} 
+\index{funcoes.h@{funcoes.h}!mostrarSomaVencimentosPorGenero@{mostrarSomaVencimentosPorGenero}}
+\index{mostrarSomaVencimentosPorGenero@{mostrarSomaVencimentosPorGenero}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{mostrarSomaVencimentosPorGenero()}{mostrarSomaVencimentosPorGenero()}}
+{\footnotesize\ttfamily void mostrar\+Soma\+Vencimentos\+Por\+Genero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas,  }\item[{int}]{num\+Clinicas }\end{DoxyParamCaption})}
+
+
+
+Mostra os vencimentos por género e por equipa de uma clínica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinicas} & \\
+\hline
+{\em num\+Clinicas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_aaccb2e04be78f6b5492f5f7ea13ceeb2}\label{_questao20_2funcoes_8h_aaccb2e04be78f6b5492f5f7ea13ceeb2}} 
+\index{funcoes.h@{funcoes.h}!obterIndiceClinicaPorNumero@{obterIndiceClinicaPorNumero}}
+\index{obterIndiceClinicaPorNumero@{obterIndiceClinicaPorNumero}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{obterIndiceClinicaPorNumero()}{obterIndiceClinicaPorNumero()}}
+{\footnotesize\ttfamily int obter\+Indice\+Clinica\+Por\+Numero (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}} $\ast$}]{clinicas,  }\item[{int}]{num\+Clinicas,  }\item[{int}]{num\+Clinica }\end{DoxyParamCaption})}
+
+
+
+Devolve o indice (no array de clinicas) de uma clinica a partir do num\+Clinica. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em clinicas} & \\
+\hline
+{\em num\+Clinicas} & \\
+\hline
+{\em num\+Clinica} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a7ea76ef7e0e4241fc5b99811e7e5f69c}\label{_questao20_2funcoes_8h_a7ea76ef7e0e4241fc5b99811e7e5f69c}} 
+\index{funcoes.h@{funcoes.h}!somatorioVencimentosClinica@{somatorioVencimentosClinica}}
+\index{somatorioVencimentosClinica@{somatorioVencimentosClinica}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{somatorioVencimentosClinica()}{somatorioVencimentosClinica()}}
+{\footnotesize\ttfamily float somatorio\+Vencimentos\+Clinica (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_clinica}{Clinica}}}]{clinica }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_questao20_2funcoes_8h_a70b125391eec4f9121f68d66fce9c900}\label{_questao20_2funcoes_8h_a70b125391eec4f9121f68d66fce9c900}} 
+\index{funcoes.h@{funcoes.h}!textoMenu@{textoMenu}}
+\index{textoMenu@{textoMenu}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{textoMenu()}{textoMenu()}}
+{\footnotesize\ttfamily void texto\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Texto do menu (para não o escrever várias vezes) 
+

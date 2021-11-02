@@ -1,0 +1,24 @@
+Algoritmo "Questao 11"
+
+funcao somatorioNum (num: inteiro, somatorio: inteiro) : inteiro
+    inicio-funcao
+        se (num = 0)
+            retorna (somatorio)
+        fim-se
+        
+        somatorio <- somatorio + num
+
+        retorna somatorioNum(num-1, somatorio);
+        
+    fim-funcao
+
+Variaveis
+
+    num: inteiro
+    somatorio: inteiro 
+
+Inicio
+    somatorio <- 0
+    ler(num)
+    escrever(somatorioNum(num, somatorio))
+Fim

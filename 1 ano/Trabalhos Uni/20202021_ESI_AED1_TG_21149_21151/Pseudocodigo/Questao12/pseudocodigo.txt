@@ -1,0 +1,38 @@
+Algoritmo "Questao 12"
+
+funcao verificaPalindromo (num: inteiro) : inteiro
+    inicio-funcao
+        aux: inteiro
+        aux <- num
+        inverso: inteiro
+        inverso <- 0 
+
+        enquanto(aux != 0)
+            inverso <- inverso * 10 + aux % 10
+            aux <- aux / 10
+        fim-enquanto
+
+        se (inverso = num)
+            retornar(1)
+        fim-se
+
+        retorna(0)
+
+    fim-funcao
+
+Variaveis
+
+    num: inteiro
+
+Inicio
+
+    ler(num)
+    se(verificaPalindromo(num) = 1)
+        escrever("Numero e palindromo")
+    fim-se
+    senao
+        escrever("Numero nao e palindromo")
+    fim-senao
+
+Fim
+

@@ -1,0 +1,46 @@
+Enunciado:
+Proponha um programa capaz de gerar de forma automática e aleatória 70
+números inteiros positivos entre 0 e 100. Apresente na consola a soma e
+média dos números primos existentes no conjunto criado.
+
+Algoritmo "Questao 8"
+
+funcao VerificaPrimo (numero: inteiro) : inteiro
+    Inicio-funcao
+        se(numero = 0 || numero = 1)
+            retorna 0
+        fim-se
+
+        para i <- 2 ate numero passo 1 fazer
+            se (numero % i = 0)
+                retorna 0
+            fim-se
+        fim-para-fazer
+
+        retorna 1
+    Fim-funcao
+
+Variaveis
+
+    numero, limiteInferior, limiteSuperior, somatorioPrimos, contadorPrimos: inteiros
+    mediaPrimos: real
+
+Inicio
+
+    para i <- 0 até 70 passo 1 fazer
+
+        numero <- rand() % (limiteSuperior - limiteInferior) + limiteInferior
+        escrever(numero);
+        se(verificaPrimo(numero) = 1)
+            somatorioPrimos <- somatorioPrimos + numero
+            contadorPrimos <- contadorPrimos + 1
+        fim-se
+
+    fim-para-fazer
+
+    mediaPrimos <- somatorioPrimos / contadorPrimos
+
+    escrever(somatorioPrimos)
+    escrever(mediaPrimos)
+
+Fim

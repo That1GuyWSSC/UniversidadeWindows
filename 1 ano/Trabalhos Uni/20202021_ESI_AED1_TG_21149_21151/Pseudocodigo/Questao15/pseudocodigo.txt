@@ -1,0 +1,28 @@
+Algoritmo "Questao 15"
+
+funcao contaCaracter (texto: caracter, caracter: caracter) : inteiro
+    Variaveis
+        contador: inteiro
+    inicio-funcao
+        contador <- 0
+        enquanto (*texto != '\0')
+            se(*texto = caracter)
+                contador <- contador + 1
+            fim-se
+            texto <- texto + 1
+        fim-enquanto
+        retorna(contador)
+    fim-funcao
+
+Variaveis
+
+    texto[11]: caracter
+    letra: caracter
+
+Inicio
+
+    texto <- "Algoritmos"
+    letra = 'o'
+    escrever(contaCaracter(texto, letra))
+
+Fim

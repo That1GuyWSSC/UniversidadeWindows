@@ -1,0 +1,49 @@
+Enunciado:
+Foi efetuado um questionário a um número indeterminado de estudantes numa
+universidade. A todos os estudantes foi solicitado o género, a idade e se
+está a gostar ou não do curso que está a frequentar. Implemente uma
+aplicação capaz de calcular e informar:
+• O número de estudantes entrevistados;
+• Percentagem de estudantes por género;
+• Quantidade de estudantes de género masculino com menos de 20 anos que não
+gostam do curso que estão a frequentar. 
+
+Algoritmo "Questao 7"
+
+Variaveis
+
+    genero: caracter
+    idade , contadorEntrevistados, contadorM, contadorF, contadorMascMenos20NGosta: inteiro
+    gostaCurso: boleano
+
+Inicio
+
+    contadorEntrevistados <- 0
+    contadorM <- 0
+    contadorF <- 0
+    contadorMascMenos20NGosta <- 0
+
+    ler(genero)
+    enquanto (genero != '0')
+        contadorEntrevistados <- contadorEntrevistados + 1
+        se (genero = 'M')
+            contadorM <- contadorM + 1
+        fim-se
+        se (genero = 'F')
+            contadorF <- contadorF + 1
+        fim-se
+        ler(idade)
+        ler(gostaCurso)
+        se (genero = 'M' && idade < 20 && gostaCurso = falso)
+            contadorMascMenos20NGosta <- contadorMascMenos20NGosta + 1
+        fim-se
+        ler (genero)
+    fim-enquanto
+
+    escrever(contadorEntrevistados)
+    escrever((contadorM / contadorEntrevistados) * 100)
+    escrever((contadorF / contadorEntrevistados) * 100)
+    escrever(contadorMascMenos20NGosta)
+
+Fim
+

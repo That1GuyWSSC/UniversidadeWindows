@@ -1,0 +1,187 @@
+\hypertarget{_questao19_2funcoes_8h}{}\doxysection{Codigo/\+Questao19/funcoes.h File Reference}
+\label{_questao19_2funcoes_8h}\index{Codigo/Questao19/funcoes.h@{Codigo/Questao19/funcoes.h}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_questao19_2funcoes_8h_adbd5cbe76e047a39e0a34f085cdae6fe}{M\+IN}}~90
+\item 
+\#define \mbox{\hyperlink{_questao19_2funcoes_8h_a392fb874e547e582e9c66a08a1f23326}{M\+AX}}~150
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_questao19_2funcoes_8h_ae73f74b017df5a4c42770fedf71212b2}{obter\+Maior}} (int $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Obtem o maior valor de um array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_questao19_2funcoes_8h_a8c60bc59e35ac4e7412381c8217d0c7b}{obter\+Menor}} (int $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Obtem o menor valor de um array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_questao19_2funcoes_8h_a177b555a05fd91918975df8ef8077485}{amplitude\+Array}} (int menor, int maior)
+\begin{DoxyCompactList}\small\item\em Retorna a amplitude de um array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_questao19_2funcoes_8h_ad62491a6d677130a091874000c2e864b}{gerar\+Numero}} (int limite\+Inf, int limite\+Sup)
+\begin{DoxyCompactList}\small\item\em Gera um número aleatório entre um limite superior e um limite inferior. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao19_2funcoes_8h_a942abfb50b3dc5f4807ec7b5039db2b7}{mostra\+Array}} (int $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Mostra um array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao19_2funcoes_8h_a3032637473762ae8eba33779c8f78d2a}{ordena\+Array\+Inteiro\+Desc}} (int $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Ordena um array decrescentemente. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao19_2funcoes_8h_aadab67c6852e8bbab2b09e85583e0551}{mostra\+Impares}} (int $\ast$\mbox{\hyperlink{_rascunho_8txt_a4a59fb18aa151b0a608cf8c51f923402}{array}}, int n)
+\begin{DoxyCompactList}\small\item\em Mostra os valores impares de um array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_questao19_2funcoes_8h_ae2311466a4647c9b95d029594c054c79}{escreve\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Procedimento de escrever o menu, criado para que o menu apenas seja alterado num sítio, caso seja necessário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_a392fb874e547e582e9c66a08a1f23326}\label{_questao19_2funcoes_8h_a392fb874e547e582e9c66a08a1f23326}} 
+\index{funcoes.h@{funcoes.h}!MAX@{MAX}}
+\index{MAX@{MAX}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{MAX}{MAX}}
+{\footnotesize\ttfamily \#define M\+AX~150}
+
+\mbox{\Hypertarget{_questao19_2funcoes_8h_adbd5cbe76e047a39e0a34f085cdae6fe}\label{_questao19_2funcoes_8h_adbd5cbe76e047a39e0a34f085cdae6fe}} 
+\index{funcoes.h@{funcoes.h}!MIN@{MIN}}
+\index{MIN@{MIN}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{MIN}{MIN}}
+{\footnotesize\ttfamily \#define M\+IN~90}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_a177b555a05fd91918975df8ef8077485}\label{_questao19_2funcoes_8h_a177b555a05fd91918975df8ef8077485}} 
+\index{funcoes.h@{funcoes.h}!amplitudeArray@{amplitudeArray}}
+\index{amplitudeArray@{amplitudeArray}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{amplitudeArray()}{amplitudeArray()}}
+{\footnotesize\ttfamily int amplitude\+Array (\begin{DoxyParamCaption}\item[{int}]{menor,  }\item[{int}]{maior }\end{DoxyParamCaption})}
+
+
+
+Retorna a amplitude de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em menor} & Menor valor do array \\
+\hline
+{\em maior} & Maior valor de um array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_ae2311466a4647c9b95d029594c054c79}\label{_questao19_2funcoes_8h_ae2311466a4647c9b95d029594c054c79}} 
+\index{funcoes.h@{funcoes.h}!escreveMenu@{escreveMenu}}
+\index{escreveMenu@{escreveMenu}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{escreveMenu()}{escreveMenu()}}
+{\footnotesize\ttfamily void escreve\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Procedimento de escrever o menu, criado para que o menu apenas seja alterado num sítio, caso seja necessário. 
+
+\mbox{\Hypertarget{_questao19_2funcoes_8h_ad62491a6d677130a091874000c2e864b}\label{_questao19_2funcoes_8h_ad62491a6d677130a091874000c2e864b}} 
+\index{funcoes.h@{funcoes.h}!gerarNumero@{gerarNumero}}
+\index{gerarNumero@{gerarNumero}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{gerarNumero()}{gerarNumero()}}
+{\footnotesize\ttfamily int gerar\+Numero (\begin{DoxyParamCaption}\item[{int}]{limite\+Inf,  }\item[{int}]{limite\+Sup }\end{DoxyParamCaption})}
+
+
+
+Gera um número aleatório entre um limite superior e um limite inferior. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em limite\+Inf} & limite superior \\
+\hline
+{\em limite\+Sup} & limite inferior \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Número aleatório 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_a942abfb50b3dc5f4807ec7b5039db2b7}\label{_questao19_2funcoes_8h_a942abfb50b3dc5f4807ec7b5039db2b7}} 
+\index{funcoes.h@{funcoes.h}!mostraArray@{mostraArray}}
+\index{mostraArray@{mostraArray}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{mostraArray()}{mostraArray()}}
+{\footnotesize\ttfamily void mostra\+Array (\begin{DoxyParamCaption}\item[{int $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Mostra um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Quantidade de elementos do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_aadab67c6852e8bbab2b09e85583e0551}\label{_questao19_2funcoes_8h_aadab67c6852e8bbab2b09e85583e0551}} 
+\index{funcoes.h@{funcoes.h}!mostraImpares@{mostraImpares}}
+\index{mostraImpares@{mostraImpares}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{mostraImpares()}{mostraImpares()}}
+{\footnotesize\ttfamily void mostra\+Impares (\begin{DoxyParamCaption}\item[{int $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Mostra os valores impares de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Quantidade de elementos do array \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_ae73f74b017df5a4c42770fedf71212b2}\label{_questao19_2funcoes_8h_ae73f74b017df5a4c42770fedf71212b2}} 
+\index{funcoes.h@{funcoes.h}!obterMaior@{obterMaior}}
+\index{obterMaior@{obterMaior}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{obterMaior()}{obterMaior()}}
+{\footnotesize\ttfamily int obter\+Maior (\begin{DoxyParamCaption}\item[{int $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Obtem o maior valor de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Numero de elementos do array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Maior valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_a8c60bc59e35ac4e7412381c8217d0c7b}\label{_questao19_2funcoes_8h_a8c60bc59e35ac4e7412381c8217d0c7b}} 
+\index{funcoes.h@{funcoes.h}!obterMenor@{obterMenor}}
+\index{obterMenor@{obterMenor}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{obterMenor()}{obterMenor()}}
+{\footnotesize\ttfamily int obter\+Menor (\begin{DoxyParamCaption}\item[{int $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Obtem o menor valor de um array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Numero de elementos do array \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+float Menor valor 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_questao19_2funcoes_8h_a3032637473762ae8eba33779c8f78d2a}\label{_questao19_2funcoes_8h_a3032637473762ae8eba33779c8f78d2a}} 
+\index{funcoes.h@{funcoes.h}!ordenaArrayInteiroDesc@{ordenaArrayInteiroDesc}}
+\index{ordenaArrayInteiroDesc@{ordenaArrayInteiroDesc}!funcoes.h@{funcoes.h}}
+\doxysubsubsection{\texorpdfstring{ordenaArrayInteiroDesc()}{ordenaArrayInteiroDesc()}}
+{\footnotesize\ttfamily void ordena\+Array\+Inteiro\+Desc (\begin{DoxyParamCaption}\item[{int $\ast$}]{array,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Ordena um array decrescentemente. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em array} & Array \\
+\hline
+{\em n} & Quantidade de elementos do array \\
+\hline
+\end{DoxyParams}

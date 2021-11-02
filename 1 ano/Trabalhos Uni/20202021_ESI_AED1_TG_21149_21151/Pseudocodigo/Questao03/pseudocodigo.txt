@@ -1,0 +1,59 @@
+Enunciado:
+Crie uma aplicação que permita ler as notas de um aluno às disciplinas de
+Matemática, Português, Inglês e Geografia e calcular a sua média. Em função
+da média deve ser mostrada uma mensagem com o conteúdo "Aprovado" ou
+"Reprovado". Consideram-se notas positivas as notas iguais ou superiores a
+9,5. 
+
+calculo: media <- (notaMat + notaPT + notaIng + notaGeo) / 4
+condição:
+se média >= 9.5 mostra "aprovado"
+se média < 9.5 mostra "reprovado"
+
+1 passo: obter os valores das 4 notas
+2 passo: realizar o calculo, media <- (notaMat + notaPT + notaIng + notaGeo) / 4
+3 passo: verificar a condição,
+se média >= 9.5 mostra "aprovado"
+se média < 9.5 mostra "reprovado"
+
+Algoritmo "Media"
+
+Variaveis
+
+    media, somatorio, nota: reais
+
+Inicio
+
+    somatorio <- 0;
+
+    escrever("Escreva a nota de matemática")
+    ler (nota)
+    somatorio <- somatorio + nota;
+
+    escrever("Escreva a nota de portugues")
+    ler (nota)
+    somatorio <- somatorio + nota;
+
+    escrever("Escreva a nota de ingles")
+    ler (nota)
+    somatorio <- somatorio + nota;
+
+    escrever("Escreva a nota de geografia")
+    ler (nota)
+    somatorio <- somatorio + nota;
+
+    media <- (somatorio) / 4
+
+    se (media >= 9.5)
+        escrever("aprovado")
+    fim-se
+    senao
+        escrever("reprovado")
+    fim-senao
+
+Fim
+
+
+
+
+    
