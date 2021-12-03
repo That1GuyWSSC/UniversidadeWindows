@@ -19,7 +19,7 @@ void main(){
             total= total - compra;
             quantidade++;
             compras= compras= compra;
-            printf("Compra registrada! ");
+            printf("Compra registrada! '");
         }
         
     } while (total >=compra);
