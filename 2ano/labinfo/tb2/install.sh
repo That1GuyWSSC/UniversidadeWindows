@@ -15,8 +15,8 @@ cd top10
 
 #Inicio da parte de Shawshank
 
-mkdir "The Shawshank Redemption"
-cd "The Shawshank Redemption"
+mkdir The_Shawshank_Redemption
+cd The_Shawshank_Redemption
 echo "Tim Robbins 	... 	Andy Dufresne
 Morgan Freeman 	... 	Ellis Boyd 'Red' Redding
 Bob Gunton 	... 	Warden Norton
@@ -39,8 +39,8 @@ Paul McCrane 	... 	Guard Trout" >> castinfo
 #Inicio da parte do The Godfather
 
 cd ..
-mkdir "The Godfather"
-cd "The Godfather"
+mkdir The_Godfather
+cd The_Godfather
 
 echo "    Marlon Brando (Don Vito Corleone)
     Al Pacino (Michael Corleone)
@@ -59,8 +59,8 @@ echo "    Marlon Brando (Don Vito Corleone)
 #Incio da parte do The Godfather: Part II
 
 cd ..
-mkdir "The Godfather: Part II"
-cd "The Godfather: Part II"
+mkdir The_Godfather_Part_II
+cd The_Godfather_Part_II
 
 echo "    Al Pacino (Michael Corleone)
     Robert De Niro (Vito Corleone)
@@ -76,6 +76,12 @@ echo "    Al Pacino (Michael Corleone)
 #Fim da parte do Godfather part II
 
 
+cd ..
+mkdir The_Dark_Knight
+cd The_Dark_Knight
+echo ""
+
+
 
 
 
@@ -85,6 +91,7 @@ echo "    Al Pacino (Michael Corleone)
 
 
 #Apagar a video todo os ficheiros da videoteca incluinda a propria diretoria
+cd ..
 cd ..
 touch apagar.sh
 echo "#!/bin/bash
