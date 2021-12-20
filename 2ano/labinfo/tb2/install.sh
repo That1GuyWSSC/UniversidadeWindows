@@ -6,10 +6,11 @@ NOW=$(date +"%d/%m/%Y")
 DIR=/home/$USER/
 
 mkdir videoteca
+chmod 777 videoteca
 cd videoteca
 touch informacao
 echo "Bem vindo a tua propria videoteca.
-A videoteca foi criada a $NOW , mas a informacao dos filmes e ficheiros foi retirada antes de dezemebro de 2021. " >> informacao
+A videoteca foi criada a $NOW, mas a informacao dos filmes e ficheiros foi retirada antes de dezemebro de 2021. " >> informacao
 mkdir filmes
 cd filmes
 
@@ -58,6 +59,8 @@ Production company
 	
 Genero do filme : Drama" >> detalhes
 
+echo "Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red." >> resumo
+
 #Fim De Shawshank
 
 #Inicio da parte do The Godfather
@@ -91,6 +94,7 @@ Gross worldwide: $246,120,986
 Genero do filme : Drama e Crime
 " >> detalhes
 
+echo "The Godfather "Don" Vito Corleone is the head of the Corleone mafia family in New York. He is at the event of his daughter's wedding. Michael, Vito's youngest son and a decorated WW II Marine is also present at the wedding. Michael seems to be uninterested in being a part of the family business. Vito is a powerful man, and is kind to all those who give him respect but is ruthless against those who do not. But when a powerful and treacherous rival wants to sell drugs and needs the Don's influence for the same, Vito refuses to do it. What follows is a clash between Vito's fading old values and the new ways which may cause Michael to do the thing he was most reluctant in doing and wage a mob war against all the other mafia families which could tear the Corleone family apart." >> resumo
 
 #Fim da parte do GodFather
 
@@ -119,6 +123,8 @@ Filming locations: Kaiser Estate, 4000 W Lake Blvd, Homewood, Lake Tahoe, Califo
 Production companies: Paramount Pictures The Coppola Company American Zoetrope
 Genero do filme : Drama e Crime
 " >> detalhes
+
+echo "The continuing saga of the Corleone crime family tells the story of a young Vito Corleone growing up in Sicily and in 1910s New York; and follows Michael Corleone in the 1950s as he attempts to expand the family business into Las Vegas, Hollywood and Cuba." >> resumo
 
 #Fim da parte do Godfather part II
 
@@ -154,6 +160,8 @@ Production companies: Warner Bros Legendary Entertainment Syncopy
 Genero do filme: Drama Crime Acao Thriller
 " >> detalhes
 
+echo "Set within a year after the events of Batman Begins (2005), Batman, Lieutenant James Gordon, and new District Attorney Harvey Dent successfully begin to round up the criminals that plague Gotham City, until a mysterious and sadistic criminal mastermind known only as The Joker appears in Gotham, creating a new wave of chaos. Batman's struggle against The Joker becomes deeply personal, forcing him to confront everything he believes and improve his technology to stop him. A love triangle develops between Bruce Wayne, Dent, and Rachel Dawes." >> resumo
+
 #fim da parte do the dark night
 
 # comeco da parte de 12 angry men
@@ -178,6 +186,8 @@ Filming locations: New York County Courthouse - 60 Centre Street, New York City,
 Production company: Orion-Nova Productions
 Genero do filme: Crime e drama" >> detalhes
 
+echo "The defense and the prosecution have rested, and the jury is filing into the jury room to decide if a young man is guilty or innocent of murdering his father. What begins as an open-and-shut case of murder soon becomes a detective story that presents a succession of clues creating doubt, and a mini-drama of each of the jurors' prejudices and preconceptions about the trial, the accused, AND each other. Based on the play, all of the action takes place on the stage of the jury room." >> resumo
+
 #fim da parte do 12 angry men
 
 #comeco da parte de Schindler's List (1993)
@@ -185,8 +195,7 @@ Genero do filme: Crime e drama" >> detalhes
 cd ..
 mkdir Schindlers_List
 cd Schindlers_List
-echo "
-Liam Neeson     Oskar Schindler
+echo "Liam Neeson     Oskar Schindler
 Ralph Fiennes   Amon Goeth
 Andrzej Seweryn     Julian Scherner
 Béatrice Macola     Ingrid
@@ -209,6 +218,8 @@ Also known as: La lista de Schindler
 Filming locations: Auschwitz-Birkenau Concentration Camp, Oswiecim, Malopolskie, Poland
 Production companies: Universal Pictures Amblin Entertainment
 Genero do filme: Biografia Drama e Historia" >> detalhes
+
+echo "Oskar Schindler is a vain and greedy German businessman who becomes an unlikely humanitarian amid the barbaric German Nazi reign when he feels compelled to turn his factory into a refuge for Jews. Based on the true story of Oskar Schindler who managed to save about 1100 Jews from being gassed at the Auschwitz concentration camp, it is a testament to the good in all of us." >> resumo
 
 
 #fim da parte da schindler list
@@ -245,6 +256,8 @@ Also known as: The Return of the King
 Filming locations: Hinuera Valley, Matamata, Waikato, New Zealand
 Production companies: New Line CinemaWingNut FilmsThe Saul Zaentz Company
 Genero do filme: Acao Aventura Drama e Fantasia" >> detalhes
+
+echo "The final confrontation between the forces of good and evil fighting for control of the future of Middle-earth. Frodo and Sam reach Mordor in their quest to destroy the One Ring, while Aragorn leads the forces of good against Sauron's evil army at the stone city of Minas Tirith." >> resumo
 
 
 #fim da parte do lotrrotk
@@ -296,6 +309,8 @@ Filming locations: 1435 Flower Street, Glendale, California, USA
 Production companies: MiramaxA Band ApartJersey Films
 Genero do filme: Crime e Drama " >> detalhes
 
+echo "Jules Winnfield (Samuel L. Jackson) and Vincent Vega (John Travolta) are two hit men who are out to retrieve a suitcase stolen from their employer, mob boss Marsellus Wallace (Ving Rhames). Wallace has also asked Vincent to take his wife Mia (Uma Thurman) out a few days later when Wallace himself will be out of town. Butch Coolidge (Bruce Willis) is an aging boxer who is paid by Wallace to lose his fight. The lives of these seemingly unrelated people are woven together comprising of a series of funny, bizarre and uncalled-for incidents" >> resumo
+
 
 #fim da parte da pulp fiction
 
@@ -332,6 +347,8 @@ Filming locations: 1435 Flower Street, Glendale, California, USA
 Production companies: MiramaxA Band ApartJersey Films
 Genero do filme: Aventura Western" >> detalhes
 
+echo "Blondie, The Good (Clint Eastwood), is a professional gunslinger who is out trying to earn a few dollars. Angel Eyes, The Bad (Lee Van Cleef), is a hitman who always commits to a task and sees it through--as long as he's paid to do so. And Tuco, The Ugly (Eli Wallach), is a wanted outlaw trying to take care of his own hide. Tuco and Blondie share a partnership making money off of Tuco's bounty, but when Blondie unties the partnership, Tuco tries to hunt down Blondie. When Blondie and Tuco come across a horse carriage loaded with dead bodies, they soon learn from the only survivor, Bill Carson (Antonio Casale), that he and a few other men have buried a stash of gold in a cemetery. Unfortunately, Carson dies and Tuco only finds out the name of the cemetery, while Blondie finds out the name on the grave. Now the two must keep each other alive in order to find the gold. Angel Eyes (who had been looking for Bill Carson) discovers that Tuco and Blondie met with Carson and knows they know where the gold is; now he needs them to lead him to it. Now The Good, the Bad, and the Ugly must all battle it out to get their hands on $200,000.00 worth of gold. " >> resumo 
+
 #fim da part the good the bad etc
 
 # comeco da parte de The Lord of the Rings: The Fellowship of the Ring
@@ -359,22 +376,21 @@ Filming locations: Wellington, New Zealand
 Production companies: New Line Cinema Wing Nut Films The Saul Zaentz Company
 Genero do filme: Acao Aventura Drama e Fantasia" >> detalhes
 
+echo "An ancient Ring thought lost for centuries has been found, and through a strange twist of fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it. However, he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir, and his three Hobbit friends Merry, Pippin, and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign." >> resumo
+
 
 #Outros scripts
 
 # Genero dos filmes
 cd $HOME/videoteca
-echo " grep -r -h "Genero do filme" videoteca/* " >> genero_filmes.sh 
+echo " grep -r -h "Genero" ~/videoteca/filmes/* " >> genero_filmes.sh 
 chmod +x genero_filmes.sh
-echo " grep -r "Languages" videoteca/* " >>  linguas_filmes.sh 
+#Linguas dos filmes
+echo " grep -r -h "Languages" ~/videoteca/* " >>  linguas_filmes.sh 
 chmod +x linguas_filmes.sh
-echo " head -n 2 $(find filmes -name "castinfo") " >> top_cast.sh 
+#Top cast dos filmes
+echo "head -n 2 filmes/12_Angry_Men/castinfo filmes/Schindlers_List/castinfo filmes/Lord_of_the_rings_Return_of_the_King/castinfo filmes/The_Good_The_Bad_and_The_Ugly/castinfo filmes/Pulp_Fiction/castinfo filmes/The_Dark_Knight/castinfo filmes/The_Godfather_Part_II/castinfo filmes/The_Godfather/castinfo filmes/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring/castinfo filmes/The_Shawshank_Redemption/castinfo" >> top_cast.sh
 chmod +x top_cast.sh
-
-
-
-
-
 
 
 #Apagar a video todo os ficheiros da videoteca incluinda a propria diretoria
@@ -382,12 +398,19 @@ cd $HOME/videoteca
 touch apagar.sh
 echo "#!/bin/bash
       cd ..
-      rm -rf videoteca/" >> apagar.sh
+      rm -rf videoteca/
+      rm -r unzip.sh " > apagar.sh
       chmod +x apagar.sh
 
 
 # zips videoteca
-zip -r videoteca.zip videoteca
+cd $HOME
+zip -q -r videoteca.zip videoteca
 rm -rf videoteca/
 
+touch unzip.sh
+echo "unzip videoteca.zip
+rm -rf videoteca.zip" > unzip.sh
+chmod +x unzip.sh
+#Final message
 echo "Videoteca foi criada."
