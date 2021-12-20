@@ -387,7 +387,7 @@ echo "#!/bin/bash
 
 
 # zips videoteca
-zip -r videoteca.zip videoteca/
+zip -r videoteca.zip videoteca
 rm -rf videoteca/
 
 echo "Videoteca foi criada."
