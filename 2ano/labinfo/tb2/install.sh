@@ -2,16 +2,16 @@
 
 # My first script
 
-echo "Hello World!"
+NOW=$(date +"%d/%m/%Y")
+DIR=/home/$USER/
+
 mkdir videoteca
 cd videoteca
 touch informacao
-echo "Bem vindo a tua propria videoteca." >> informacao
-echo "Que tipo de filmes gostas?"
-read tipo
-echo "eu tmb gosto de $tipo"
-mkdir top10
-cd top10
+echo "Bem vindo a tua propria videoteca.
+A videoteca foi criada a $NOW , mas a informacao dos filmes e ficheiros foi retirada antes de dezemebro de 2021. " >> informacao
+mkdir filmes
+cd filmes
 
 #Inicio da parte de Shawshank
 
@@ -54,20 +54,9 @@ Filming locations
 
 Production company
 
-    Castle Rock Entertainment
-
-Box office
-
-    Budget
-        $25,000,000 (estimated)
-    Gross US & Canada
-        $28,699,976
-    Opening weekend US & Canada
-        $727,327Sep 25, 1994
-    Gross worldwide
-        $28,817,291
-
-                                " >> detalhes
+    Castle Rock Entertainment   
+	
+Genero do filme : Drama" >> detalhes
 
 #Fim De Shawshank
 
@@ -88,8 +77,19 @@ echo "    Marlon Brando (Don Vito Corleone)
 
 										" >> castinfo
 
+echo "Release date: March 24, 1972 (United States)
+Country of origin: United States
+Languages: English Italian Latin
+Also known as: Mario Puzo's The Godfather
+Filming locations: Forza d'Agrò, Messina, Sicily, Italy
 
-echo ""
+Box office
+Budget: $6,000,000 (estimated)
+Gross US & Canada: $134,966,411
+Opening weekend US & Canada: $302,393Mar 19, 1972
+Gross worldwide: $246,120,986
+Genero do filme : Drama e Crime
+" >> detalhes
 
 
 #Fim da parte do GodFather
@@ -111,7 +111,18 @@ echo "    Al Pacino (Michael Corleone)
 
 " >> castinfo
 
+echo "Release date: December 18, 1974 (United States)
+Country of origin: United States
+Languages: English Italian Spanish Latin Sicilian
+Also known as: Son of Godfather
+Filming locations: Kaiser Estate, 4000 W Lake Blvd, Homewood, Lake Tahoe, California, USA
+Production companies: Paramount Pictures The Coppola Company American Zoetrope
+Genero do filme : Drama e Crime
+" >> detalhes
+
 #Fim da parte do Godfather part II
+
+#inicio da parte do the dark night
 
 
 cd ..
@@ -134,6 +145,16 @@ Ritchie Coster  ...     Chechen
 Anthony Michael Hall    ...     Engel
 Keith Szarabajka    ...     Stephens" >> castinfo
 
+echo "Release date: July 18, 2008 (United States)
+Countries of origin: United StatesUnited Kingdom
+Languages: English Mandarin
+Also known as: Batman Begins 2
+Filming locations: Chicago, Illinois, USA
+Production companies: Warner Bros Legendary Entertainment Syncopy
+Genero do filme: Drama Crime Acao Thriller
+" >> detalhes
+
+#fim da parte do the dark night
 
 # comeco da parte de 12 angry men
 
@@ -149,6 +170,15 @@ echo "    Henry Fonda (Davis/Juror #8)
     Ed Begley (Juror #10)
 
 " >> castinfo
+
+echo "Release date: April 10, 1957 (United States)
+Country of origin: United States
+Also known as: Twelve Angry Men
+Filming locations: New York County Courthouse - 60 Centre Street, New York City, New York, USA
+Production company: Orion-Nova Productions
+Genero do filme: Crime e drama" >> detalhes
+
+#fim da parte do 12 angry men
 
 #comeco da parte de Schindler's List (1993)
 
@@ -171,6 +201,17 @@ Malgoscha Gebel     Wiktoria Klonowska
 Mark Ivanir     Marcel Goldberg
 Norbert Weisser     Albert Hujar
 Shmuel Levy     Wilek Chilowicz " >> castinfo
+
+echo "Release date: February 4, 1994 (United States)
+Country of origin: United States
+Languages: English Hebrew German Polish Latin
+Also known as: La lista de Schindler
+Filming locations: Auschwitz-Birkenau Concentration Camp, Oswiecim, Malopolskie, Poland
+Production companies: Universal Pictures Amblin Entertainment
+Genero do filme: Biografia Drama e Historia" >> detalhes
+
+
+#fim da parte da schindler list
 
 
 #comeco da parte de Lord of the rings return of the king
@@ -195,9 +236,18 @@ Hugo Weaving    Elrond
 Cate Blanchett  Galadriel 
 David Wenham    Faramir 
 Karl Urban  Éomer 
-John Noble  Denethor 
-                    " >> castinfo
+John Noble  Denethor " >> castinfo
 
+echo "Release date: December 17, 2003 (United States)
+Countries of origin: New Zealand United States
+Languages: English Quenya Old English Sindarin
+Also known as: The Return of the King
+Filming locations: Hinuera Valley, Matamata, Waikato, New Zealand
+Production companies: New Line CinemaWingNut FilmsThe Saul Zaentz Company
+Genero do filme: Acao Aventura Drama e Fantasia" >> detalhes
+
+
+#fim da parte do lotrrotk
 
 # comeco da parte de Pulp fiction
 
@@ -238,6 +288,17 @@ Burr Steers
 Duane Whitaker 
 "  >> castinfo
 
+echo "Release date: October 14, 1994 (United States)
+Country of origin: United States
+Languages: English Spanish French
+Also known as: Black Mask
+Filming locations: 1435 Flower Street, Glendale, California, USA
+Production companies: MiramaxA Band ApartJersey Films
+Genero do filme: Crime e Drama " >> detalhes
+
+
+#fim da parte da pulp fiction
+
 
 
 #comeco da parte de the good the bad and the ugly
@@ -261,10 +322,17 @@ Livio Lorenzon
 Antonio Casale 
 Sandro Scarchilli 
 Benito Stefanelli 
-Angelo Novi 
-                        " >> castinfo
+Angelo Novi " >> castinfo
 
+echo "Release date: October 14, 1994 (United States)
+Country of origin: United States
+Languages: English Spanish French
+Also known as: Black Mask
+Filming locations: 1435 Flower Street, Glendale, California, USA
+Production companies: MiramaxA Band ApartJersey Films
+Genero do filme: Aventura Western" >> detalhes
 
+#fim da part the good the bad etc
 
 # comeco da parte de The Lord of the Rings: The Fellowship of the Ring
 
@@ -283,6 +351,27 @@ Bilbo Baggins   Ian Holm
 Saruman the White   Christopher Lee
 Gimli   John Rhys-Davies" >> castinfo
 
+echo "Release date: December 19, 2001 (United States)
+Countries of origin: New Zealand United States
+Languages: English Sindarin
+Also known as: The Lord of the Rings: The Fellowship of the Ring: The Motion Picture
+Filming locations: Wellington, New Zealand
+Production companies: New Line Cinema Wing Nut Films The Saul Zaentz Company
+Genero do filme: Acao Aventura Drama e Fantasia" >> detalhes
+
+
+#Outros scripts
+
+# Genero dos filmes
+cd $HOME/videoteca
+echo " grep -r -h "Genero do filme" videoteca/* " >> genero_filmes.sh 
+chmod +x genero_filmes.sh
+echo " grep -r "Languages" videoteca/* " >>  linguas_filmes.sh 
+chmod +x linguas_filmes.sh
+echo " head -n 2 $(find filmes -name "castinfo") " >> top_cast.sh 
+chmod +x top_cast.sh
+
+
 
 
 
@@ -296,4 +385,9 @@ echo "#!/bin/bash
       rm -rf videoteca/" >> apagar.sh
       chmod +x apagar.sh
 
+
+# zips videoteca
 zip -r videoteca.zip videoteca/
+rm -rf videoteca/
+
+echo "Videoteca foi criada."
