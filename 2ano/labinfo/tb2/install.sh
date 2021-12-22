@@ -2,9 +2,12 @@
 
 # My first script
 
+#Variaveis
 NOW=$(date +"%d/%m/%Y")
 DIR=/home/$USER/
 
+
+#Inicio da videoteca
 mkdir videoteca
 chmod 777 videoteca
 cd videoteca
