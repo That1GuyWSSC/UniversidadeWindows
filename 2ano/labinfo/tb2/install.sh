@@ -37,26 +37,11 @@ Paul McCrane 	... 	Guard Trout" >> castinfo
 
 
 echo " 
-
-Release date
-    October 14, 1994 (United States)
-
-Country of origin
-
-    United States
-
-Language
-
-    English
-
-Filming locations
-
-    127A Smithfield Road, Frederiksted, Virgin Islands
-
-Production company
-
-    Castle Rock Entertainment   
-	
+Release date: October 14, 1994 (United States)
+Country of origin: United States
+Language: English
+Filming locations: 127A Smithfield Road, Frederiksted, Virgin Islands
+Production company: Castle Rock Entertainment   
 Genero do filme : Drama" >> detalhes
 
 echo "Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red." >> resumo
@@ -85,12 +70,6 @@ Country of origin: United States
 Languages: English Italian Latin
 Also known as: Mario Puzo's The Godfather
 Filming locations: Forza d'Agrò, Messina, Sicily, Italy
-
-Box office
-Budget: $6,000,000 (estimated)
-Gross US & Canada: $134,966,411
-Opening weekend US & Canada: $302,393Mar 19, 1972
-Gross worldwide: $246,120,986
 Genero do filme : Drama e Crime
 " >> detalhes
 
@@ -269,35 +248,19 @@ mkdir Pulp_Fiction
 cd Pulp_Fiction
 echo "  
 John Travolta 
- 
 Bruce Willis 
- 
 Samuel L. Jackson 
-
 Uma Thurman 
- 
 Christopher Walken 
-
 Ving Rhames Ca
-
 Tim Roth 
- 
-Amanda Plummer 
- 
-Harvey Keitel 
-
+Amanda Plummer  Harvey Keitel 
 Eric Stoltz 
- 
 Maria de Medeiros
-
-Rosanna Arquette 
- 
+Rosanna Arquette  
 Peter Greene 
-
 Frank Whaley 
-
 Burr Steers 
-
 Duane Whitaker 
 "  >> castinfo
 
@@ -378,6 +341,9 @@ Genero do filme: Acao Aventura Drama e Fantasia" >> detalhes
 
 echo "An ancient Ring thought lost for centuries has been found, and through a strange twist of fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it. However, he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir, and his three Hobbit friends Merry, Pippin, and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign." >> resumo
 
+#Fim da parte The Lord of the Rings: The Fellowship of the Ring
+
+#Fim da parte dos filmes
 
 #Outros scripts
 
@@ -385,9 +351,11 @@ echo "An ancient Ring thought lost for centuries has been found, and through a s
 cd $HOME/videoteca
 echo " grep -r -h "Genero" ~/videoteca/filmes/* " >> genero_filmes.sh 
 chmod +x genero_filmes.sh
+
 #Linguas dos filmes
 echo " grep -r -h "Languages" ~/videoteca/* " >>  linguas_filmes.sh 
 chmod +x linguas_filmes.sh
+
 #Top cast dos filmes
 echo "head -n 2 filmes/12_Angry_Men/castinfo filmes/Schindlers_List/castinfo filmes/Lord_of_the_rings_Return_of_the_King/castinfo filmes/The_Good_The_Bad_and_The_Ugly/castinfo filmes/Pulp_Fiction/castinfo filmes/The_Dark_Knight/castinfo filmes/The_Godfather_Part_II/castinfo filmes/The_Godfather/castinfo filmes/The_Lord_of_the_Rings_The_Fellowship_of_the_Ring/castinfo filmes/The_Shawshank_Redemption/castinfo" >> top_cast.sh
 chmod +x top_cast.sh
@@ -403,14 +371,16 @@ echo "#!/bin/bash
       chmod +x apagar.sh
 
 
-# zips videoteca
+# zips videoteca e remove a pasta 
 cd $HOME
 zip -q -r videoteca.zip videoteca
 rm -rf videoteca/
 
+#Script para fazer unzip a videoteca
 touch unzip.sh
 echo "unzip videoteca.zip
 rm -rf videoteca.zip" > unzip.sh
 chmod +x unzip.sh
+
 #Final message
-echo "Videoteca foi criada."
+echo "Videoteca foi criada, corra a script unzip.sh para fazer unzip a pasta zip."
