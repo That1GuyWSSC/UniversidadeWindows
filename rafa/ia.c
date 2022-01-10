@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+/*
 void insere (int s[], int N, int x){                                                        
        int i = 0;
        int j;
@@ -18,7 +19,7 @@ void insere (int s[], int N, int x){
     }
         
    }
-
+*/
    void insere (int s[], int N, int x) {
     int i, j;
     
