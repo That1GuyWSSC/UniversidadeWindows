@@ -1,0 +1,1 @@
+extern void readfromfile(FILE *t, char *str);
