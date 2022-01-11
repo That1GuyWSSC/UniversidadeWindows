@@ -1,25 +1,15 @@
 #include <stdio.h>
 #include "funcoes.h"
 #include <stdlib.h>
+#include "structs.h"
+
+#define MAX 10000
 
 int main(){
 
-    char str[10000];
-    FILE *fp;
-    char *x;
+    ME *teste;
 
-    fp = fopen("utilizacao.txt", "r");
-    
-    if (fp = NULL)
-    {
-        printf("Nao abriu o ficheiro");
-    }
-    
-    readfromfile(fp, str);
-
-    printf("%s", *x);
-    
-    fclose(fp);
+    readfromfileme(ME *teste);
 }
 
 /*int main(){

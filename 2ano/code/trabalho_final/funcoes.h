@@ -1,5 +1,2 @@
-extern void readfromfile(FILE *t, char *str);
+extern void readfromfileme(ME array[]);
 
-/*
-extern void readfromfile(FILE *t, char *str);
-*/
