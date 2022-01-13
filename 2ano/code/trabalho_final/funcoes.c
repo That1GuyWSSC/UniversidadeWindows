@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "funcoes.h"
 #include "structs.h"
 #include <string.h>
 
@@ -14,7 +13,7 @@ void readfromfileme(ME *array){
     while (!feof(input_file) )
     {
         
-        fscanf(input_file,"%d %d %s %d %d", &ordem , &nif , &codigo , &tempo, &distancia);
+        fscanf(input_file,"%d %d %s %d %d", &ordem , &nif , codigo , &tempo, &distancia);
         printf("%d %d %s %d %d", ordem , nif , codigo , tempo , distancia);
     }
 
@@ -25,13 +24,47 @@ void readfromfileme(ME *array){
 
 }
 
-/*#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "funcoes.h"
+int insertme(ME array[],int index, int ordem, int nif, char *codigo, int tempo, int distancia){
 
-void readfromfile(FILE *t, char *str){
+    if(existeme(array, index, ordem) ==1) printf("Ja existe;"); ;
+    array[index].ordem = ordem;
+    array[index].nif = nif;
+    array[index].tempo= tempo;
+    array[index].distancia= distancia;
+    strcpy(array[index].codigo, codigo);
 
-    fgets(str, 10000, t);
+    return 1;
 
-} */
+}
+
+int existeme(ME array[], int index, int ordem){
+    for (int i = 0; i < index; i++)
+    {
+         if (array[index].ordem== ordem) return 1;
+         else return 0;
+    
+    }
+    
+
+}
+
+/*
+
+int lerAtletas(Atleta c[])
+{FILE* fp;
+ int cod, resultado, qt;
+ float alt, pes;
+ char nm[50];
+ fp = fopen("atletas.txt","rt");
+ 
+ qt = 0;
+ while(!feof(fp))  // feof ->> end of file
+ {fscanf(fp,"%d;%f;%f;%s\n",&cod,&alt,&pes,nm);
+  resultado = inserirAtleta(c,qt,cod,nm,alt,pes);
+  if (resultado==1) qt++;
+ }
+ fclose(fp);
+ return(qt);
+}
+
+*/

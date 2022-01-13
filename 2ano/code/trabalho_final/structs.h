@@ -1,16 +1,16 @@
-typedef struct ME
+typedef struct 
 {
     int ordem;
     int nif;
     char *codigo;
     int tempo;
     int distancia;
-}*ME;
+}ME;
 
-typedef struct MU
+typedef struct 
 {
     char *codigo;
     char *tipo;
     float custo;
     int autonomia;
-}*MU;
+}MU;

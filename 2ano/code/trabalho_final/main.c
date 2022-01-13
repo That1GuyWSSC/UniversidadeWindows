@@ -9,7 +9,7 @@ int main(){
 
     ME *teste;
 
-    readfromfileme(ME *teste);
+    readfromfileme(teste);
 }
 
 /*int main(){
