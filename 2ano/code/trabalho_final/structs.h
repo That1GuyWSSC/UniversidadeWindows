@@ -1,4 +1,4 @@
-typedef struct 
+typedef struct ME
 {
     int ordem;
     int nif;
@@ -7,7 +7,7 @@ typedef struct
     int distancia;
 }ME;
 
-typedef struct 
+typedef struct MU
 {
     char *codigo;
     char *tipo;

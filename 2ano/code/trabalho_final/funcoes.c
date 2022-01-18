@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "structs.h"
 #include <string.h>
+#include "funcoes.h"
 
 void readfromfileme(ME *array){
 
@@ -24,6 +25,17 @@ void readfromfileme(ME *array){
 
 }
 
+int existeme(ME array[], int index, int ordem){
+    for (int i = 0; i < index; i++)
+    {
+         if (array[index].ordem== ordem) return 1;
+         else return 0;
+    
+    }
+    
+
+}
+
 int insertme(ME array[],int index, int ordem, int nif, char *codigo, int tempo, int distancia){
 
     if(existeme(array, index, ordem) ==1) printf("Ja existe;"); ;
@@ -37,16 +49,7 @@ int insertme(ME array[],int index, int ordem, int nif, char *codigo, int tempo, 
 
 }
 
-int existeme(ME array[], int index, int ordem){
-    for (int i = 0; i < index; i++)
-    {
-         if (array[index].ordem== ordem) return 1;
-         else return 0;
-    
-    }
-    
 
-}
 
 /*
 

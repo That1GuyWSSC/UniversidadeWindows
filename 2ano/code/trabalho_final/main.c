@@ -1,13 +1,14 @@
 #include <stdio.h>
+#include "structs.h"
 #include "funcoes.h"
 #include <stdlib.h>
-#include "structs.h"
+
 
 #define MAX 10000
 
 int main(){
 
-    ME *teste;
+    ME teste[20];
 
     readfromfileme(teste);
 }
