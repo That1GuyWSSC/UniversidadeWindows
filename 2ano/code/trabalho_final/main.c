@@ -4,14 +4,20 @@
 #include <stdlib.h>
 
 
-#define MAX 10000
 
-int main(){
+int main(void){
 
-    ME teste[20];
+    ME teste[100];
 
-    readfromfileme(teste);
+
+    insertme(teste,0 ,0, 454, "ola" , 4, 5 );
+    printarray(teste, 0);
+
+
 }
+
+
+
 
 /*int main(){
 char str[100000];
