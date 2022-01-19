@@ -38,7 +38,7 @@ int morre(DA arr[]){
     char *x;
     printf("a\n");
     int i = 0;
-    FILE *info = fopen("entrada/ficheiro.txt","r");
+    FILE *info = fopen("ficheiro.txt","r");
     printf("a\n");
     char buffer[PILA];
     printf("a\n");
