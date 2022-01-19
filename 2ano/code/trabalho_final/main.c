@@ -8,9 +8,10 @@
 int main(void){
 
     ME teste[100];
-
-    readfromfileinsertme(teste);
+    MU teste2[100];
+    //readfromfileinsertme(teste);
    
+    readfromfileinsertmu(teste2);
 
 
 
