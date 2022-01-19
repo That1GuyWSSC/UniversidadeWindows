@@ -9,9 +9,9 @@ int main(void){
 
     ME teste[100];
 
+    readfromfileinsertme(teste);
+   
 
-    insertme(teste,0 ,0, 454, "ola" , 4, 5 );
-    printarray(teste, 0);
 
 
 }
