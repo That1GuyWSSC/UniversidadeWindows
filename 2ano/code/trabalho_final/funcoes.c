@@ -6,12 +6,14 @@
 
 
 int insertme(ME array[],int index, int ordem, int nif, char *codigo, int tempo, int distancia){
-
-    if(existeme(array, index, ordem) == 1) 
+/*    if(existeme(array, index, ordem) == 1) 
     {
         printf("Ja existe;");
         return 0;
+        exit(1);
     }
+*/
+
 
     array[index].ordem = ordem;
     array[index].nif = nif;
@@ -24,15 +26,12 @@ int insertme(ME array[],int index, int ordem, int nif, char *codigo, int tempo, 
 }    
 
 void readfromfileinsertme(ME array[]){
-	printf("a\n");
     FILE *input_file;
     int ordem , nif , tempo , distancia;
     int c = 0;
     char codigo[100];
 
     input_file = fopen("me.txt", "rt");
-
-    printf("b\n");
     
     if (input_file == NULL)
     {
@@ -42,7 +41,7 @@ void readfromfileinsertme(ME array[]){
         while (!feof(input_file) )
         {
             fscanf(input_file,"%d %d %s %d %d\n", &ordem , &nif , codigo, &tempo, &distancia);
-            printf("%d %d %s %d %d \n", ordem , nif , codigo , tempo , distancia);
+            //printf("%d %d %s %d %d \n", ordem , nif , codigo , tempo , distancia);
             
             insertme(array, c ,ordem, nif, codigo, tempo, distancia);
             printarray(array, c);
@@ -54,7 +53,7 @@ void readfromfileinsertme(ME array[]){
     
 }
 
-int existeme(ME array[], int index, int ordem){
+/*int existeme(ME array[], int index, int ordem){
     for (int i = 0; i < index; i++)
     {
          if (array[index].ordem == ordem) return 1;
@@ -62,7 +61,7 @@ int existeme(ME array[], int index, int ordem){
     
     }
 }
-
+*/
 
 void printarray(ME array[], int i)
 {
@@ -109,4 +108,33 @@ void readfromfileinsertmu(MU array[]){
         }
 
     fclose(input_file);
+}
+
+
+int menu(){
+    int opcao;
+    printf("**********************MENU******************************\n");
+    printf("*\t1 -Ler o ficheiro de mobilidade eletrica         *\n");
+    printf("*\t2-Ler o ficheiro de mobilidade urbana            *\n");
+    printf("*\t3-Inserir novo meio de mobilidade eletrica       *\n");
+    printf("*\t4-Remover um meio de mobilidade eletrica       *\n");
+    printf("*\t7-Listar todos os meio de mobilidade eletrica");
+    printf("********************************************************\n");
+    printf("Escreva o numero da opcao desejada.\n");
+    scanf("%d", &opcao);
+
+return (opcao);
+}
+
+void printartudome(ME array[]){
+
+    for (int i = 0; i < 100; i++) {
+        printf("A ordem do pedido: %d \n ", array[i].ordem);
+        printf("O nif do pedido %d \n", array[i].nif);
+        printf("O codigo do pedido: %s \n", array[i].codigo);
+        printf("O tempo do pedido: %d \n", array[i].tempo);
+        printf("A distancia do pedido: %d \n", array[i].distancia);
+        printf("********************");
+    }
+
 }
