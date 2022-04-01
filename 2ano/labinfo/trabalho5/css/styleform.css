@@ -1,0 +1,114 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    font-family: sans-serif;
+  }
+
+  nav {
+    display: table;
+    table-layout: fixed;
+    width: 65%;
+    margin: 0 auto;
+}
+
+#topbar {
+    width:100%;
+    min-height:35px;
+    background-color: #000;
+    position:fixed;
+    top:0; left:0;
+}
+#topbar a {
+    background-color:inherit;
+    color: #fff;
+}
+
+ul#topnav  {
+    display: table-row;
+    padding: 0;
+    overflow: hidden;
+    position:relative;
+    bottom:0;
+}
+
+ul#topnav li {
+    list-style-type: none;
+    display: table-cell;
+    text-align:center;
+    vertical-align:middle;
+}
+
+ul#topnav li a {
+    display:block;
+    padding:8px;
+    text-decoration:underline;
+}
+
+ul#topnav li> ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+}
+  .center {
+    position: relative;
+    padding: 50px 50px;
+    background: #fff;
+    border-radius: 10px;
+  }
+  .center h1 {
+    font-size: 2em;
+    border-left: 5px solid blue;
+    padding: 10px;
+    color: #000;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+  }
+  .center .inputbox {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 50px;
+  }
+  .center .inputbox input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #000;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+  }
+  
+  .center .inputbox span {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1em;
+    transition: 0.6s;
+    font-family: sans-serif;
+  }
+
+  .center .inputbox input:valid ~ span {
+    transform: translateX(-13px) translateY(-35px);
+    font-size: 1em;
+  }
+  .center .inputbox [type="button"] {
+    width: 50%;
+    background: dodgerblue;
+    color: #fff;
+    border: #fff;
+  }
+  
+  

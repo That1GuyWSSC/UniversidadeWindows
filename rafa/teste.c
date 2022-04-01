@@ -1,33 +1,22 @@
 #include <stdio.h>
 
-void incremeta(int a){
-
-    a++;
-
-}
-
-void incrementapontador(int *a){
-
-    (*a)++;
-
-}
+#define N 1024
 
 int main(){
 
-    int a=10;
-    int b=5;
-    a += b;
+ int i=1,j;
+ float x=0;
+ while (i<N)
+ {
+     for (j=0; j < N;j+=2)
+     {
+         x+=2;
 
-    printf("%d , %d", a,b);
-    int x= 10;
-    int *y;
-    *y = 52;
+     }
+    i*=2;
+     
+ }
 
-    printf("%d \n %d\n",x ,*y);
-    incremeta(x);
-    incrementapontador(y);
-    printf("%d \n %d\n",x ,*y);
-    printf("y: %d %d %d \n x:%d %d\n", &y, (*y), y, x, &x);
-    
-
+printf("%f\n", x/N);
+printf("%f", N);
 }
