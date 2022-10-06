@@ -1,0 +1,6 @@
+D:\Universidade\3ano\poo\Aulas\Aula2\bin\Debug\Aula2.exe
+D:\Universidade\3ano\poo\Aulas\Aula2\bin\Debug\Aula2.pdb
+D:\Universidade\3ano\poo\Aulas\Aula2\obj\Debug\Aula2.csprojAssemblyReference.cache
+D:\Universidade\3ano\poo\Aulas\Aula2\obj\Debug\Aula2.csproj.CoreCompileInputs.cache
+D:\Universidade\3ano\poo\Aulas\Aula2\obj\Debug\Aula2.exe
+D:\Universidade\3ano\poo\Aulas\Aula2\obj\Debug\Aula2.pdb

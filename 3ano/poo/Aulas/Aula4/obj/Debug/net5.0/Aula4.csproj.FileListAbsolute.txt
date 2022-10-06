@@ -1,0 +1,16 @@
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.csprojAssemblyReference.cache
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.AssemblyInfoInputs.cache
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.AssemblyInfo.cs
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.csproj.CoreCompileInputs.cache
+D:\Universidade\3ano\poo\Aulas\Aula4\bin\Debug\net5.0\Aula4.exe
+D:\Universidade\3ano\poo\Aulas\Aula4\bin\Debug\net5.0\Aula4.deps.json
+D:\Universidade\3ano\poo\Aulas\Aula4\bin\Debug\net5.0\Aula4.runtimeconfig.json
+D:\Universidade\3ano\poo\Aulas\Aula4\bin\Debug\net5.0\Aula4.runtimeconfig.dev.json
+D:\Universidade\3ano\poo\Aulas\Aula4\bin\Debug\net5.0\Aula4.dll
+D:\Universidade\3ano\poo\Aulas\Aula4\bin\Debug\net5.0\ref\Aula4.dll
+D:\Universidade\3ano\poo\Aulas\Aula4\bin\Debug\net5.0\Aula4.pdb
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.dll
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\ref\Aula4.dll
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.pdb
+D:\Universidade\3ano\poo\Aulas\Aula4\obj\Debug\net5.0\Aula4.genruntimeconfig.cache
