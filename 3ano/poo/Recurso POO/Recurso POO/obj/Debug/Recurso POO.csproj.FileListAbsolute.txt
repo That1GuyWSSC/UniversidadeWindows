@@ -1,0 +1,6 @@
+D:\Universidade\3ano\poo\Recurso POO\Recurso POO\bin\Debug\Recurso_POO.exe
+D:\Universidade\3ano\poo\Recurso POO\Recurso POO\bin\Debug\Recurso_POO.pdb
+D:\Universidade\3ano\poo\Recurso POO\Recurso POO\obj\Debug\Recurso POO.csprojAssemblyReference.cache
+D:\Universidade\3ano\poo\Recurso POO\Recurso POO\obj\Debug\Recurso POO.csproj.CoreCompileInputs.cache
+D:\Universidade\3ano\poo\Recurso POO\Recurso POO\obj\Debug\Recurso_POO.exe
+D:\Universidade\3ano\poo\Recurso POO\Recurso POO\obj\Debug\Recurso_POO.pdb
