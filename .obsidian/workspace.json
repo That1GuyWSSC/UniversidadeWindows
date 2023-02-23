@@ -1,0 +1,162 @@
+{
+  "main": {
+    "id": "219e3dbedeadd48f",
+    "type": "split",
+    "children": [
+      {
+        "id": "3946065fb02da1f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3aed742c7d021938",
+            "type": "leaf",
+            "state": {
+              "type": "diff-view",
+              "state": {
+                "file": "README.md",
+                "staged": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "76d8e37e10e9610f",
+    "type": "split",
+    "children": [
+      {
+        "id": "4d4d661b763a9462",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82ce9b4cd1a324ae",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8ace3bdf213488f8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3a141bdccbf48fab",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "904247fbfac08ca6",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b2383653d55834f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a4cd7afdfc35fc50",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "90ec2cd0b1ac0bbb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "750eb7f23f9d6e5d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e62c5a4ffb35e2c2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "3aed742c7d021938",
+  "lastOpenFiles": [
+    "3ano/PL/Teste1.md",
+    "3ano/PL/Pasted image 20230223214355.png",
+    "3ano/PL/2023-02-23.md",
+    "3ano/PL/Aula PL - 3.md",
+    "3ano/PL/PL/Aula PL - 3.md",
+    "3ano/PL/PL",
+    "3ano/PL",
+    "2023-02-23.md",
+    "Untitled.canvas",
+    "2ano/code/tbpi1/README.md",
+    "README.md",
+    "1ano/Cenas de programacao/LP 1/Aula 2/27_10_2020/API/html/closed.png",
+    "1ano/Cenas de programacao/LP 1/Aula 2/27_10_2020/API/html/tab_s.png",
+    "1ano/Cenas de programacao/LP 1/Aula 2/27_10_2020/API/html/sync_off.png",
+    "1ano/Cenas de programacao/LP 1/Aula 2/27_10_2020/API/html/bc_s.png"
+  ]
+}
