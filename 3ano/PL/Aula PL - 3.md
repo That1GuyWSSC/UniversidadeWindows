@@ -31,5 +31,28 @@ Considere o alfabeto V = {a,b,c,d}.
 
 2.1. Descreva por palavras suas a linguagem gerada por cada uma das expressões regulares;
 
+
+
+
+2.2.  Dê exemplos de algumas palavras válidas dessa linguagem;
+
+
+
+
+#Propriedades
+
+![[Pasted image 20230223220846.png]]
+
+
+
+![[Pasted image 20230223220932.png]]
+
+
+1.1. Mostre que e2 e e5 são equivalentes;
+
 		
-   
+
+
+
+
+1.2. Mostre que e1 e e2 não são equivalentes, dando exemplo de uma, ou mais, palavras que sejam geradas por uma das expressões e não pela outra;
