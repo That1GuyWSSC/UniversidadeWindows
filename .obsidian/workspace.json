@@ -11,10 +11,11 @@
             "id": "3aed742c7d021938",
             "type": "leaf",
             "state": {
-              "type": "diff-view",
+              "type": "markdown",
               "state": {
-                "file": "README.md",
-                "staged": false
+                "file": "3ano/PL/Aula PL - 3.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -84,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "3ano/PL/Aula PL - 3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "3ano/PL/Aula PL - 3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,10 +146,12 @@
   },
   "active": "3aed742c7d021938",
   "lastOpenFiles": [
-    "3ano/PL/Teste1.md",
+    "Pasted image 20230223220932.png",
+    "Pasted image 20230223220846.png",
     "3ano/PL/Pasted image 20230223214355.png",
-    "3ano/PL/2023-02-23.md",
     "3ano/PL/Aula PL - 3.md",
+    "3ano/PL/Teste1.md",
+    "3ano/PL/2023-02-23.md",
     "3ano/PL/PL/Aula PL - 3.md",
     "3ano/PL/PL",
     "3ano/PL",
