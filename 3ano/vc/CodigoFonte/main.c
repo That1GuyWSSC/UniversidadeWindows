@@ -1,27 +1,38 @@
-#include "vc.h"
 #include <stdio.h>
+#include "vc.h"
 
 int main(){
 
-    IVC *image;
+    IVC *imagesrc, *imagedst;
     int i;
-
-    image = vc_read_image("../Images/FLIR/flir-01.pgm");
-    if (image = NULL)
+    imagesrc = vc_read_image("../Images/Classic/pepper.ppm");
+    if (imagesrc == NULL)
     {
         printf("Error -> vc_read_image(): \n \tFile not found\n");
         getchar();
         return 0;
     }
-
-    for(i=0; i<image->bytesperline*image->height; i+=image->channels)
+ 
+    imagedst = vc_image_new(imagesrc->width,imagesrc->height,1,imagesrc->levels);
+     if (imagedst == NULL)
     {
-        image->data[i] = 255 - image->data[i];
+        printf("Error -> vc_image_new: \n \tFile not found\n");
+        getchar();
+        return 0;
     }
-    
-    //vc_write_image("vc-0001.pgm", image);
 
-    vc_image_free(image);
+    minhacomposta_vc_rgb_to_gray(imagesrc,imagedst); 
+    //vc_rgb_to_gray(imagesrc,imagedst); 
+    printf("teste\n");
+
+    vc_write_image("src.ppm", imagesrc);
+    vc_write_image("TesteImageGray.pgm",imagedst);
+
+    vc_image_free(imagesrc);
+    vc_image_free(imagedst);
+    /*printf("Width = %d\n", imagedst->width);
+    printf("height = %d\n", imagedst->height);*/
+    
 
     printf("Press any key to close...");
     getchar();

@@ -1,13 +1,13 @@
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//           INSTITUTO POLITÉCNICO DO CÁVADO E DO AVE
+//           INSTITUTO POLITï¿½CNICO DO Cï¿½VADO E DO AVE
 //                          2022/2023
-//             ENGENHARIA DE SISTEMAS INFORMÁTICOS
-//                    VISÃO POR COMPUTADOR
+//             ENGENHARIA DE SISTEMAS INFORMï¿½TICOS
+//                    VISï¿½O POR COMPUTADOR
 //
 //             [  BRUNO OLIVEIRA - boliveira@ipca.pt  ]
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// Desabilita (no MSVC++) warnings de funções não seguras (fopen, sscanf, etc...)
+// Desabilita (no MSVC++) warnings de funï¿½ï¿½es nï¿½o seguras (fopen, sscanf, etc...)
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
@@ -18,11 +18,11 @@
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//            FUNÇÕES: ALOCAR E LIBERTAR UMA IMAGEM
+//            FUNï¿½ï¿½ES: ALOCAR E LIBERTAR UMA IMAGEM
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
-// Alocar memória para uma imagem
+// Alocar memï¿½ria para uma imagem
 IVC *vc_image_new(int width, int height, int channels, int levels)
 {
 	IVC *image = (IVC *) malloc(sizeof(IVC));
@@ -46,7 +46,7 @@ IVC *vc_image_new(int width, int height, int channels, int levels)
 }
 
 
-// Libertar memória de uma imagem
+// Libertar memï¿½ria de uma imagem
 IVC *vc_image_free(IVC *image)
 {
 	if(image != NULL)
@@ -66,7 +66,7 @@ IVC *vc_image_free(IVC *image)
 
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//    FUNÇÕES: LEITURA E ESCRITA DE IMAGENS (PBM, PGM E PPM)
+//    FUNï¿½ï¿½ES: LEITURA E ESCRITA DE IMAGENS (PBM, PGM E PPM)
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 
@@ -230,7 +230,7 @@ IVC *vc_read_image(char *filename)
 				return NULL;
 			}
 
-			// Aloca memória para imagem
+			// Aloca memï¿½ria para imagem
 			image = vc_image_new(width, height, channels, levels);
 			if(image == NULL) return NULL;
 
@@ -272,7 +272,7 @@ IVC *vc_read_image(char *filename)
 				return NULL;
 			}
 
-			// Aloca memória para imagem
+			// Aloca memï¿½ria para imagem
 			image = vc_image_new(width, height, channels, levels);
 			if(image == NULL) return NULL;
 
@@ -361,4 +361,142 @@ int vc_write_image(char *filename, IVC *image)
 	}
 	
 	return 0;
+}
+
+
+int vc_rgb_get_red_gray(IVC *srcdst){
+
+    unsigned char *data = (unsigned char *) srcdst->data;
+    int width = srcdst->width;
+    int height = srcdst->height;
+    int channels = srcdst->channels;
+    int levels = srcdst->levels;
+    int bytesperline= srcdst->bytesperline;
+
+    long int pos;
+	//verificacao de erros com o ficheiro
+    if((srcdst-> width <=0 ) || (srcdst->height <=0) || (srcdst->data == NULL))return 0;
+    if(channels != 3 ) return 0;
+
+
+    for (int i = 0; i < width; i++)
+    {
+        for (int j = 0; j < height; j++)
+        {
+            pos = j * bytesperline + i * channels;
+
+            data[pos+1]= data[pos];
+            data[pos+2]= data[pos];
+        }
+        
+    }    
+
+}
+
+
+/*int minha_vc_rgb_to_gray(IVC *src, IVC *dst){
+
+	unsigned char *data_src = (unsigned char *) src->data;
+	int channelssrc = src->channels;
+	int bytesperlinesrc = src->width * src->channels;
+
+	unsigned char *data_dst = (unsigned char *) dst->data;
+	int channelsdst = dst->channels;
+	int bytesperlinedst = dst->width * dst->channels;
+	int width = src->width;
+	int height = src->height;
+	float auxred, auxgreen, auxblue;
+	long int pos, pos_dst;	
+
+	if((src->width <= 0) || (src->height <=0) || (src->data == NULL)) printf("A imagem tem altura/largura/data impossivel"); return 0;
+	if((src->width != dst->width) || (src->height != dst->height)) printf("Elas tem diferentes valores de dimensao"); return 0;
+	if((src->channels != 3) || (dst->channels !=1)) printf("Os canais das imagems estao errados"); return 0;
+
+
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j < width; j++)
+		{
+			pos = i * bytesperlinesrc + j * channelssrc;
+			pos_dst = i * bytesperlinedst + j * channelsdst;
+
+			auxred = (float) data_src[pos] ;
+			auxgreen = (float) data_src[pos+1] ;
+			auxblue= (float) data_src[pos+2];
+
+			data_dst[pos_dst] = (unsigned char) ((auxred * 0.299) + (auxgreen * 0.587) + (auxblue * 0.114));
+			
+		}
+		
+	}
+		
+	return 1;
+}
+*/
+
+int vc_rgb_to_gray(IVC *src, IVC *dst)
+{
+    unsigned char *datasrc = (unsigned char*) src -> data;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels;
+        unsigned char *datadst = (unsigned char*) dst -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+    int x,y;
+    long int pos_src, pos_dst;
+    float rg, gg,bg;
+
+    for(y=0; y<height;y++)
+    {
+        for(x=0; x<width;x++)
+        {
+            pos_src = y * bytesperline_src + x * channels_src;
+            pos_dst = y * bytesperline_dst + x * channels_dst;
+
+            rg = (float) datasrc[pos_src];
+            gg = (float) datasrc[pos_src + 1];
+            bg = (float) datasrc[pos_src + 2];
+
+            datadst[pos_dst] = (unsigned char) ((rg * 0.299) + (gg * 0.587) + (bg * 0.114));
+        }
+    }
+    return 1;
+}
+
+int minhacomposta_vc_rgb_to_gray(IVC *src, IVC *dst){
+
+	unsigned char *datasrc = (unsigned char *) src->data;
+	int width = src->width;
+	int height = src->height;
+	int levels = src->levels;
+	int bytesperlinesrc = src->width * src->channels;
+	int channels = src->channels;
+
+	unsigned char *datadst = (unsigned char *) dst->data;
+	int channelsdst= dst->channels;
+	int bytesperlinedst= dst->width * dst->channels;
+	int levelsdst= dst->levels;
+
+	long int pos, posdst;
+
+	float auxred,auxgreen,auxblue;
+
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j < width; j++)
+		{
+			pos = i * bytesperlinesrc + j * channels;
+			posdst = i * bytesperlinedst + j * channelsdst;
+
+			auxred = (float) datasrc[pos];
+			auxgreen = (float) datasrc[pos+1];
+			auxblue = (float) datasrc[pos+2];
+			datadst[posdst]= (unsigned char) ((auxred * 0.299) + (auxgreen *0.587) + (auxblue *0.114));
+		}
+		
+	}
+
+	return 1;
 }

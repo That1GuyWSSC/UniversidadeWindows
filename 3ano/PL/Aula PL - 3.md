@@ -40,19 +40,22 @@ Considere o alfabeto V = {a,b,c,d}.
 
 
 #Propriedades
-
-![[Pasted image 20230223220846.png]]
-
+![[Pasted image 20230301185411.png]]
 
 
-![[Pasted image 20230223220932.png]]
-
+![[Pasted image 20230301185437.png]]
 
 1.1. Mostre que e2 e e5 são equivalentes;
 
-		
+			a c|a b+ c = a e|b+ c
+		= a c| a(b+ c) = a e|b+ c
+		= a (c| b+ c) = a e|b+ c
+		= a (ec| b+ c) = a e|b+ c
+		= a (e|b+) c = a e|b+ c
 
 
 
 
 1.2. Mostre que e1 e e2 não são equivalentes, dando exemplo de uma, ou mais, palavras que sejam geradas por uma das expressões e não pela outra;
+
+
