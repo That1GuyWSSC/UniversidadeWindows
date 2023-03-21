@@ -1,93 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code da aula 2</title>
-    <link href="./main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Magazine</title>
+  <link href="./main.css" rel="stylesheet">
 </head>
+
 <body>
-<header id="main-header">
+
+  <header id="main-header">
     <h1>📘 The Code Magazine</h1>
 
     <nav>
-        <a href="./blog.html">Blog</a>    
-        <a href="#1">Challenges</a>
-        <a href="#2">Flexbox</a>
-        <a href="#3">CSS Grid</a>
+      <a href="./blog.html">Blog</a>
+      <a href="#1">Challenges</a>
+      <a href="#2">Flexbox</a>
+      <a href="#3">CSS Grid</a>
     </nav>
 
-</header>  
+  </header>
 
-<article>
-    <header class="">
-        <h2>The Basic Language of the Web: HTML</h2>
 
-        <img src="./images/laura-jones.jpg" width="50px" height="50px" alt="laura jones" title="laura jones"/>
+  <div class="container">
+    <article>
+    <header class="article-header">
+      <h2>The Basic Language of the Web: HTML</h2>
 
-        <p id="author">Posted by <strong> Laura Jones</strong> on Monday, June 21st 2027</p>
+      <img src="./images/laura-jones.jpg" alt="Headshot of Laura Jones" title="Headshot of Laura Jones" width="50px"
+        height="50px" />
 
-        <img class="post-img" src="./images/post-img.jpg" width="500px" height="200px" title="teste de texto" alt="imagem horrivel"/>
+      <p id="author">Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+
+      <img class="post-img" src="./images/post-img.jpg" alt="HTML code in a screen" title="HTML code in a screen" width="500px"
+        height="200px" />
     </header>
 
-<p>All modern websites and web applications are built using three <em>fundamental</em> technologies: HTML, CSS and JavaScript. These are the languages of the web.
-In this post, let's focus on HTML. We will learn what HTML is all about, and why you too should learn it.
-</p>
+    <p>All modern websites and web applications are built
+      using three <em>fundamental</em> technologies: HTML, CSS and
+      JavaScript. These are the languages of the web.</p>
 
-<h3>What is HTML?</h3>
+    <p>In this post, let's focus on HTML.
+      We will learn what
+      HTML is all about, and why you too
+      should learn it.</p>
 
-<p>HTML stands for HyperText Markup Language. It's a markup language that web developers use to structure and describe the content of a webpage (not a programming language).
-HTML consists of elements that describe different types of content: paragraphs, links, headings, images, video, etc. Web browsers understand HTML and render HTML code as websites.
-</p>
+    <h3>What is HTML?</h3>
 
-<p>In HTML, each element is made up of 3 parts:</p>
+    <p>HTML stands for HyperText Markup Language.
+      It's a markup language that web developers use
+      to structure and describe the content of a webpage
+      (not a programming language).</p>
 
+    <p>HTML consists of elements that describe different
+      types of content: paragraphs, links, headings, images,
+      video, etc. Web browsers understand HTML and render
+      HTML code as websites.</p>
 
-<ol>
-<li>The opening tag</li>
-<li>The closing tag</li>
-<li> actual element</li>
-</ol>
+    <p>In HTML, each element is made up of 3 parts:</p>
 
-<p>You can learn more at the MDN Web Docs.</p>
+    <ol>
+      <li>The opening tag</li>
+      <li>The closing tag</li>
+      <li>The actual element</li>
+    </ol>
 
-<h3>Why should you learn HTML?</h3>
+    <p>You can learn more at the MDN Web Docs.</p>
 
-<p>There are countless reasons for learning the fundamental language of the web. Here are 5 of them:</p>
+    <h3>Why should you learn HTML?</h3>
 
-<ul>
-<li>To be able to use the fundamental web dev language</li>
-<li>To hand-craft beautiful websites instead of relying on tools like Wordpress</li>
-<li>To build web applications</li>
-<li>To impress friends</li>
-<li>To have fun 😃</li>
-</ul>
+    <p>There are countless reasons for learning the
+      fundamental language of the web. Here are
+      5 of them:</p>
 
-<p>Hopefully you learned something new here. See you next time!</p>
-</article>
-<aside>
-    <h4>Related post</h4>
-    <ul id="related-dings">
-        <li>
-            <img src="./images/related-1.jpg" alt="person coding" width="75" height="75">
-            <a href="#">How to learn web dev</a>
-            <p class="related-authors">By Jonatas</p>
-        </li>
-        <li>
-            <img src="./images/related-3.jpg" alt="random code" width="75px" height="75">
-            <a href="#">The unknown powers of css</a>
-            <p class="related-authors">By Jim das couves</p>
-        </li>
-        <li>
-            <img src="./images/related-2.jpg" alt="kaminari" width="75px" height="75">
-            <a href="#">Why JavaScript is awesome</a>
-            <p class="related-authors">By Matilda</p>
-        </li>
+    <ul>
+      <li>To be able to use the fundamental web dev language</li>
+      <li>To hand-craft beautiful websites instead of relying
+        on tools like Wordpress</li>
+      <li>To build web applications</li>
+      <li>To impress friends</li>
+      <li>To have fun 😃</li>
     </ul>
-</aside>
-<footer>
-    <p id="Copyright" class="copyright">Copyright &copy: 2027 by dings booms</p>
-</footer>
+
+    <p>Hopefully you learned something new here. See you next time!</p>
+    </article>
+
+    <aside>
+    <h4>Related posts</h4>
+
+    <ul id="related-posts">
+      <li>
+        <img src="./images/related-1.jpg" alt="Person programming" width="75px" height="75px"
+        />
+        <a href="#">How to Learn Web Development</a>
+        <p class="related-authors">By Jonas Schmedtmann</p>
+      </li>
+      <li>
+        <img src="./images/related-2.jpg" alt="Lightning" width="75" heigth="75" />
+        <a href="#">The Unknown Powers of CSS</a>
+        <p  class="related-authors">By Jim Dillon</p>
+      </li>
+      <li>
+        <img src="./images/related-3.jpg" alt="JavaScript code on a screen" width="75" height="75"
+        />
+        <a href="#">Why JavaScript is Awesome</a>
+        <p class="related-authors">By Matilda</p>
+      </li>
+    </ul>
+    </aside>
+  </div>
+
+  <footer>
+   <p id="copyright" class="copyright">Copyright &copy; 2027 by the Code Magazine</p>
+  </footer>
 </body>
+
 </html>

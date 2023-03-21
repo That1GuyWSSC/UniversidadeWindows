@@ -33,11 +33,27 @@ typedef struct {
 IVC *vc_image_new(int width, int height, int channels, int levels);
 IVC *vc_image_free(IVC *image);
 
+
+//system("cmd /c start FilterGear Images/FLIR/flir-01.pgm"); // Input
+//system("FilterGear vc0001.pgm"); // Output
+
+
+float max(float a , float b, float c);//max para tres floats
+float min(float a , float b, float c);//min para tres floats
+
 // FUN��ES: LEITURA E ESCRITA DE IMAGENS (PBM, PGM E PPM)
 IVC *vc_read_image(char *filename); // le uma imagem 
 int vc_write_image(char *filename, IVC *image); // cria uma nova imagem
 int vc_rgb_get_red_gray(IVC *srcdst); // transforma a imagem RGB numa imagem cinzento (com os valores do vermelho), devido a que se todos os valores forem igual no rgb a cor e um cinzento
 int vc_rgb_to_gray(IVC *src, IVC *dst); // transforma uma imagem RGB numa imagem cinzento (com os valores predefinidos)  Intensidade = R * 0.299 + G * 0.587 + B * 0.114   precisa tambem de uma imagem de destino(precisam de ter a mesma dimensao)
 int minhacomposta_vc_rgb_to_gray(IVC *src, IVC *dst); // minha funcao igual vc_rgb_to_gray
+int vc_rgb_to_hsv(IVC *src, IVC *dst);//funcao para transformar imagem rgb para hsv com as mesmas dimensoes
+int vc_hsv_segmentation_one_channel(IVC *src, IVC *dst, int hmin, int hmax, int smin, int smax, int vmin, int vmax);//segmenta uma imagem hsv dentro de valores;
+int vc_hsv_segmentation(IVC *srcdst, int hmin, int hmax, int smin, int smax, int vmin, int vmax);//pelo stor para 3 canais.
+int vc_scale_gray_to_rgb(IVC *src, IVC *dst); // pega numa scale e faz as contas com ela
+int vc_gray_to_binary(IVC *src, IVC  *dst, int threshold);// segmentacao global de com uma treshold global
+int vc_gray_to_binary_global_mean(IVC *src, IVC *dst); // segmentar a imagem usando um threshold global dado pelo media de todos os pixeis da imagem
+
+
 
 

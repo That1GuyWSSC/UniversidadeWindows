@@ -1,21 +1,68 @@
-nav{
-    margin-top:10px;
-    margin-bottom: 25px;
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: lightgreen;
 }
 
-#home{
-    margin-left: 350px;
+li, a, button{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #24252A;
+  text-decoration: none;
 }
 
-#pesquisa{
-    margin-left: 350px;
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 5%;
+  background-color: #edf0f1;
 }
 
-
-#requisicao{
-    margin-left: 350px;
+.logo{
+  cursor: pointer;
 }
 
-#login{
-    margin-left: 350px;
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: green;
+}
+
+button {
+  padding: 9px 25px;
+  background-color: green;
+  color:#edf0f1;
+  border: none;
+  border-radius: 50px;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover{
+  background-color: darkgreen;
+}
+
+.options{
+  height: 50%;
+  width: 50%;
+  margin: 5%;
+  background-color:lawngreen;
+  color: #edf0f1;
+}
+.op_1{
+  padding: 30% 30%;
 }
