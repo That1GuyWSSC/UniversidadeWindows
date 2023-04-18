@@ -43,7 +43,7 @@ def reconhece(palavra:str):
 	return (estado_atual in F) and (i==tam)	
 
 # -----
-# Exemp	los de utilização da função reconhece 
+# Exemplos de utilização da função reconhece 
 for exemplo in ["", "0", "1", "00", "01", "10", "897", "0a"]:
 	print(f"'{exemplo}'\t{reconhece(exemplo)}")
 

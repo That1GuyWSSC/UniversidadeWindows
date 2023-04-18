@@ -51,8 +51,19 @@ int vc_rgb_to_hsv(IVC *src, IVC *dst);//funcao para transformar imagem rgb para 
 int vc_hsv_segmentation_one_channel(IVC *src, IVC *dst, int hmin, int hmax, int smin, int smax, int vmin, int vmax);//segmenta uma imagem hsv dentro de valores;
 int vc_hsv_segmentation(IVC *srcdst, int hmin, int hmax, int smin, int smax, int vmin, int vmax);//pelo stor para 3 canais.
 int vc_scale_gray_to_rgb(IVC *src, IVC *dst); // pega numa scale e faz as contas com ela
-int vc_gray_to_binary(IVC *src, IVC  *dst, int threshold);// segmentacao global de com uma treshold global
+int vc_gray_to_binary(IVC *src, IVC  *dst, int threshold);// segmentacao global de com uma treshold global set by the input 
 int vc_gray_to_binary_global_mean(IVC *src, IVC *dst); // segmentar a imagem usando um threshold global dado pelo media de todos os pixeis da imagem
+int vc_binary_dilate(IVC *src, IVC *dst, int kernel); //dilatacao de uma imagem BINARIA com valor do kernel
+int vc_binary_erode(IVC *src, IVC *dst, int kernel); //erosao de uma imagem BINARIA com valor do kernel
+int vc_binary_close(IVC *src, IVC *dst , int kernel);// fechar de uma imagem binaria
+int vc_binary_open(IVC *src, IVC *dst , int kernel);// abertura de uma imagem binaria
+int vc_gray_dilate(IVC *src, IVC *dst, int kernel);
+int vc_gray_erode(IVC *src, IVC *dst, int kernel);
+int vc_gray_histogram_show(IVC *src, IVC *dst);
+int vc_gray_histogram_equalization(IVC *src, IVC *dst);
+
+
+
 
 
 

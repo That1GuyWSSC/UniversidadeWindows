@@ -1,6 +1,110 @@
 #include <stdio.h>
 #include "vc.h"
 
+
+
+int main(){
+
+    IVC *imagesrc, *imagedst;
+    imagesrc= vc_read_image("../Images/Barbara/barbara2.pgm");
+    if(imagesrc == NULL)
+    {
+        printf("Error -> vc_read_image(): \n \tFile not found\n");
+        getchar();
+        return 0;
+    }
+
+    imagedst = vc_image_new(imagesrc->width,imagesrc->height,imagesrc->channels,imagesrc->levels);
+
+    vc_gray_histogram_equalization(imagesrc,imagedst);
+    printf("teste1\n");
+
+    vc_write_image("../Images/Barbara/barbara_equa.pgm", imagedst);
+    
+    system("cmd /c start FilterGear ../Images/Barbara/barbara2.pgm"); // Input
+    system("FilterGear ../Images/Barbara/barbara_equa.pgm");
+
+    vc_image_free(imagesrc);
+    vc_image_free(imagedst);
+
+    printf("Press any key to close...");
+    getchar();
+
+    return 0;
+
+}
+
+int main_morfo_again(){
+
+    IVC *imagesrc, *imagedst;
+    imagesrc= vc_read_image("../Images/Lena/lenna.pgm"); // impressao digital
+    if(imagesrc == NULL)
+    {
+        printf("Error -> vc_read_image(): \n \tFile not found\n");
+        getchar();
+        return 0;
+    }
+
+    imagedst = vc_image_new(imagesrc->width,imagesrc->height,1,imagesrc->levels);
+
+    //vc_gray_dilate(imagesrc,imagedst,51);
+    vc_gray_erode(imagesrc,imagedst,3);
+    printf("teste1\n");
+
+    //vc_write_image("../Images/Lena/lenna_abertura.pgm", imagedst);
+    vc_write_image("../Images/Lena/lenna_erode.pgm", imagedst);
+    system("cmd /c start FilterGear ../Images/Lena/lenna.pgm"); // Input// Input
+    //system("FilterGear testechess.ppm"); // Output
+    system("FilterGear ../Images/Lena/lenna_erode.pgm");
+
+    vc_image_free(imagesrc);
+    vc_image_free(imagedst);
+
+    printf("Press any key to close...");
+    getchar();
+
+    return 0;
+
+}
+
+
+int main_binary_morfo(){
+
+    IVC *imagesrc, *imagedst;
+    //imagesrc= vc_read_image("../Images/Morfo/img_4.pbm"); // pcb image
+    imagesrc= vc_read_image("../Images/Morfo/img_5.pbm"); // impressao digital
+    if(imagesrc == NULL)
+    {
+        printf("Error -> vc_read_image(): \n \tFile not found\n");
+        getchar();
+        return 0;
+    }
+
+    imagedst = vc_image_new(imagesrc->width,imagesrc->height,1,1);
+
+    //vc_binary_erode(imagesrc,imagedst,11);
+    //vc_binary_dilate(imagesrc,imagedst,3);
+
+    //vc_binary_dilate(imagesrc,imagedst,3);
+    vc_binary_close(imagesrc,imagedst, 3);
+    vc_write_image("../Images/Morfo/img_5_close.pbm", imagedst);
+
+    system("cmd /c start FilterGear ../Images/Morfo/img_5.pbm"); // Input// Input
+    //system("FilterGear testechess.ppm"); // Output
+    system("FilterGear ../Images/Morfo/img_5_close.pbm");
+
+    vc_image_free(imagesrc);
+    vc_image_free(imagedst);
+
+    printf("Press any key to close...");
+    getchar();
+
+    return 0;
+
+}
+
+
+/* 
 int main(){
 
     IVC *imagesrc, *imagedst;
@@ -16,7 +120,7 @@ int main(){
 
     vc_gray_to_binary_global_mean(imagesrc,imagedst);
 
-    vc_write_image("testemediachess.ppm", imagedst);
+    vc_write_image("../Images/Chess/testemediachess.ppm", imagedst);
     
     //vc_gray_to_binary(imagesrc,imagedst,100);
     
@@ -35,7 +139,7 @@ int main(){
     return 0;
 
 }
-
+ */
 int main_scale_gray_to_rgb(){
 
     IVC *image1, *image2;
@@ -74,7 +178,7 @@ int main_scale_gray_to_rgb(){
     return 0;
 }
 
-/*
+
 int main_hsv_segmentation(){
 
     IVC *imagesrc, *imagedst;
@@ -117,7 +221,7 @@ int main_hsv_segmentation(){
 
 }
 
-*/
+
 int main_rgb_to_hsv(){
 
     IVC *imagesrc, *imagedst;

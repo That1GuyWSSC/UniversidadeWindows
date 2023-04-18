@@ -1,0 +1,48 @@
+/* digraph finite_state_machine {
+       rankdir=LR;
+ node [shape=doublecircle] N4;
+        node [shape=point]; initial;
+        node [shape = circle] 
+        initial->N1;
+        N1->N2[label=a]; 
+        N2->N4[label=b];
+        N4->N4[label=a];
+}
+ */
+/* 
+// graph para 2 digitos a seguir do ponto feito
+digraph finite_state_machine {
+       rankdir=LR;
+ node [shape=doublecircle] Q8;
+        node [shape = circle] 
+        Q0->Q1[label= "-"];
+        Q0->Q2[label="digito"]; 
+        Q1->Q2[label="digito"];
+        Q2->Q3[label="."];
+        Q3->Q4[label="digito"];
+        Q4->Q5[label="digito"];
+        Q5->Q6[label="E"];
+        Q6->Q7[label="-"];
+        Q6->Q8[label="digito"];
+        Q7->Q8[label="digito"];
+        Q8->Q8[label="digito"];
+}
+ */
+
+
+// graph para qualquer digitos a seguir do ponto
+digraph finite_state_machine {
+       rankdir=LR;
+ node [shape=doublecircle] Q6;
+        node [shape = circle] 
+        Q0->Q1[label= "-"];
+        Q0->Q2[label="digito"]; 
+        Q1->Q2[label="digito"];
+        Q2->Q3[label="."];
+        Q3->Q3[label="digito"];
+        Q3->Q4[label="E"];
+        Q4->Q5[label="-"];
+        Q4->Q6[label="digito"];
+        Q5->Q6[label="digito"];
+        Q6->Q6[label="digito"];
+}

@@ -818,3 +818,464 @@ int vc_gray_to_binary_global_mean(IVC *src, IVC *dst){
 		vc_gray_to_binary(src,dst,media);
 }
 
+/* 
+
+int vc_gray_to_binary_niblack(IVC *src, IVC *dst, int t, float k){
+
+		   	unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+    	unsigned char *data_dst = (unsigned char *) dst -> data;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+	int levels_dst = dst ->levels;
+    long int pos_src,pos_dst, pos_x,pos_k,pos,x,y,z,xx,yy;
+	int soma,soma_quadrados,media,desvio_padrao,pixel;
+
+	float valor, media;   
+	
+
+	for ( y = 0; y < height; y++)
+	{
+		for ( x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+			for (yy = -(t-1)/2; yy <= (t-1)/2; yy++)
+			{
+				for (xx = -(t-1)/2; xx <= (t-1)/2; xx++)
+				{
+					pos_k = ((yy + y)* bytesperline_src) + ((xx + x ) * channels_src);
+
+					
+				}
+				
+			}
+				
+		}
+		
+	}
+		media = (valor) / (width * height);
+	
+		vc_gray_to_binary(src,dst,media);
+}
+
+ */
+
+int vc_binary_erode(IVC *src, IVC *dst, int kernel){
+
+		   	unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+    	unsigned char *data_dst = (unsigned char *) dst -> data;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+	int levels_dst = dst ->levels;
+    long int pos_src,pos_dst, pos_x,pos_kernel,pos,x,y,z,xx,yy;
+	
+
+	for ( y = 0; y < height; y++)
+	{
+		for ( x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+			
+			data_dst[pos_dst] = data_src[pos_src];
+
+			for (yy = -(kernel-1)/2; yy <= (kernel-1)/2; yy++)
+			{
+				for (xx = -(kernel-1)/2; xx <= (kernel-1)/2; xx++)
+				{
+					pos_kernel = ((yy + y)* bytesperline_src) + ((xx + x) * channels_src);
+
+					if (data_src[pos_kernel] == 0){
+						data_dst[pos_dst] = 0;
+					}
+					
+				}
+				
+			}
+				
+		}
+		
+	}
+
+}
+
+int vc_binary_dilate(IVC *src, IVC *dst, int kernel){
+
+		   	unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+    	unsigned char *data_dst = (unsigned char *) dst -> data;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+	int levels_dst = dst ->levels;
+    long int pos_src,pos_dst, pos_x,pos_kernel,pos,x,y,z,xx,yy;
+	
+
+	for ( y = 0; y < height; y++)
+	{
+		for ( x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+			
+			data_dst[pos_dst] = data_src[pos_src];
+
+			for (yy = -(kernel-1)/2; yy <= (kernel-1)/2; yy++)
+			{
+				for (xx = -(kernel-1)/2; xx <= (kernel-1)/2; xx++)
+				{
+					pos_kernel = ((yy + y)* bytesperline_src) + ((xx + x) * channels_src);
+
+					if (data_src[pos_kernel] == 1){
+						data_dst[pos_dst] = 1;
+					}
+					
+				}
+				
+			}
+				
+		}
+		
+	}
+
+}
+
+int vc_binary_open(IVC *src, IVC *dst , int kernel){
+
+	IVC *temp;
+
+	unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+	long int pos_src, pos_temp;
+
+	temp = vc_image_new(src->width, src->height, src->channels, src->levels);
+
+	unsigned char *data_temp = (unsigned char *) temp -> data;
+	
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j < width; j++)
+		{
+			pos_src = i * bytesperline_src + j * channels_src;
+			//pos_temp = i * bytesperline_src + j * channels_src;
+
+			data_temp[pos_src] = data_src[pos_src];
+		}
+		
+	}
+	
+
+	vc_binary_erode(src,temp,kernel);
+
+
+	vc_binary_dilate(temp,dst,kernel);
+
+}
+
+int vc_binary_close(IVC *src, IVC *dst , int kernel){
+	
+	IVC *temp;
+
+	unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+	long int pos_src, pos_temp;
+
+	temp = vc_image_new(src->width, src->height, src->channels, src->levels);
+
+	unsigned char *data_temp = (unsigned char *) temp -> data;
+	
+	for (int i = 0; i < height; i++)
+	{
+		for (int j = 0; j < width; j++)
+		{
+			pos_src = i * bytesperline_src + j * channels_src;
+			//pos_temp = i * bytesperline_src + j * channels_src;
+
+			data_temp[pos_src] = data_src[pos_src];
+		}
+		
+	}
+	
+
+	vc_binary_dilate(src,temp,kernel);
+	vc_binary_erode(temp,dst,kernel);
+}
+
+
+int vc_gray_dilate(IVC *src, IVC *dst, int kernel){
+
+		   	unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+    	unsigned char *data_dst = (unsigned char *) dst -> data;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+	int levels_dst = dst ->levels;
+    long int pos_src,pos_dst, pos_x,pos_kernel,pos,x,y,z,xx,yy;
+	long int max = 0;
+	
+
+	for ( y = 0; y < height; y++)
+	{
+		for ( x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+			
+			data_dst[pos_dst] = data_src[pos_src];
+
+			max = 0;
+
+			for (yy = -(kernel-1)/2; yy <= (kernel-1)/2; yy++)
+			{
+				for (xx = -(kernel-1)/2; xx <= (kernel-1)/2; xx++)
+				{
+					pos_kernel = ((yy + y)* bytesperline_src) + ((xx + x) * channels_src);
+
+					if (data_src[pos_kernel] >= max){
+						max = data_src[pos_kernel];
+						
+					}
+					
+
+				}
+				
+			}
+
+			data_dst[pos_dst] = max;
+
+				
+		}
+		
+	}
+
+} 
+
+
+
+int vc_gray_erode(IVC *src, IVC *dst, int kernel){
+
+		   	unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+    	unsigned char *data_dst = (unsigned char *) dst -> data;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+	int levels_dst = dst ->levels;
+    long int pos_src,pos_dst, pos_x,pos_kernel,pos,x,y,z,xx,yy;
+	long int min = 0;
+	
+
+	for ( y = 0; y < height; y++)
+	{
+		for ( x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+			
+			data_dst[pos_dst] = data_src[pos_src];
+
+			min = 0;
+
+			for (yy = -(kernel-1)/2; yy <= (kernel-1)/2; yy++)
+			{
+				for (xx = -(kernel-1)/2; xx <= (kernel-1)/2; xx++)
+				{
+					pos_kernel = ((yy + y)* bytesperline_src) + ((xx + x) * channels_src);
+
+					if (data_src[pos_kernel] <= min){
+						min = data_src[pos_kernel];
+						
+					}
+					
+
+				}
+				
+			}
+			
+			data_dst[pos_dst] = min;
+
+				
+		}
+		
+	}
+
+} 
+
+
+
+int vc_gray_histogram_show(IVC *src, IVC *dst){
+
+		unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+    	unsigned char *data_dst = (unsigned char *) dst -> data;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+	int levels_dst = dst ->levels;
+    long int pos_src,pos_dst;
+	long int min = 0;
+
+	float array[256] = {0};
+
+	for ( int y = 0; y < height; y++)
+	{
+		for ( int x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+
+			array[data_src[pos_src]] += 1;
+
+			
+		}
+		
+	}
+
+
+	int max=0;
+	for (int k = 0; k < 256; k++)
+	{
+		if (array[k] > max)
+		{
+			max = array[k];
+		}
+		
+	}
+
+	float normhist[256];
+	for (int i = 0; i < 256; i++)
+	{
+		normhist[i] = array[i] / max;
+	}
+	
+	
+
+	
+	// Gera o gr�fico com o histograma
+	for (int i = 0, x = (width - 256) / 2; i<256; i++, x++)
+		{
+	for (int y = height - 1; y>height - 1 - normhist[i] * height; y--)
+		{
+		data_dst[y * bytesperline_dst + x * channels_dst] = 255;
+	}
+}
+
+// Desenha linhas de in�cio (itensidade = 0) e fim (intensidade = 255)
+	for (int y = 0; y<height - 1; y++)
+		{
+	data_dst[y * bytesperline_dst + ((width - 256) / 2 - 1) * channels_dst] = 127;
+	data_dst[y * bytesperline_dst + ((width + 256) / 2 + 1) * channels_dst] = 127;
+}
+	
+
+}
+
+int vc_gray_histogram_equalization(IVC *src, IVC *dst){
+
+			unsigned char *data_src = (unsigned char *) src -> data;
+    int width =  src -> width;
+    int height = src -> height;
+    int bytesperline_src = src -> width * src -> channels;
+    int channels_src = src -> channels; 
+	int levels_src = src->levels;
+    	unsigned char *data_dst = (unsigned char *) dst -> data;
+    int bytesperline_dst = dst -> width * dst -> channels;
+    int channels_dst = dst -> channels; 
+	int levels_dst = dst ->levels;
+    long int pos_src,pos_dst;
+
+	int total = height *width;
+
+	float array[256] = {0};
+
+	for ( int y = 0; y < height; y++)
+	{
+		for ( int x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+
+			array[data_src[pos_src]] += 1;
+
+			
+		}
+		
+	}
+
+
+	float pdf[256];
+	float cdf[256];
+	
+	for (int i = 0; i < 256; i++)
+	{
+		pdf[i] = array[i] / total;
+		if(i != 0){
+		cdf[i] = cdf[i-1] + pdf[i];
+		}
+		else{
+			cdf[i] = pdf[i];
+		}
+	}
+
+	int min=9999;
+	for (int k = 0; k < 256; k++)
+	{
+		if (cdf[k] !=0)
+		{
+			min = cdf[k];
+			break;
+		}
+		
+	}
+
+	printf("%f" , cdf[255]);
+
+	for ( int y = 0; y < height; y++)
+	{
+		for ( int x = 0; x < width; x++)
+		{
+			pos_src = y * bytesperline_src + x * channels_src;
+			pos_dst = y * bytesperline_dst + x * channels_dst;
+
+			data_dst[pos_dst] = (unsigned char) (((cdf[data_src[pos_src]] - min) / (1 - min)) * 255);
+
+
+			
+		}
+		
+	}
+}
+
+	
+	

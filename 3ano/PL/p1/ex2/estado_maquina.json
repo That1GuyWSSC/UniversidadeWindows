@@ -1,0 +1,20 @@
+{
+    "produtos": {
+        "twix": {
+            "preco": 230,
+            "quantidade": 9
+        },
+        "mars": {
+            "preco": 210,
+            "quantidade": 8
+        }
+    },
+    "moedeiro": {
+        "c5": 14,
+        "c10": 20,
+        "c20": 16,
+        "c50": 34,
+        "e1": 14,
+        "e2": 10
+    }
+}
